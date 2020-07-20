@@ -61,3 +61,11 @@ npm run build
 1. 在`config/global-config.ts`文件里，更新`SESSION_KEY`的值（后台接口协议返回 key，例如`"sessionId"`）。
 2. 如果有其他需要全局携带的参数，需要在`utils/request/index.ts`文件里，`dataWithSession`中带上。
 3. 在`config/global-config.ts`文件里，更新`LOGIN_FAIL_CODES`的值（错误码若为该数组中的一个，则会重新拉起登录，再继续发起请求）。
+
+
+## 小程序码 ##
+
+![](https://xxzx.chinaedu.net/wx/img/1595230567545.jpg)
+
+
+
