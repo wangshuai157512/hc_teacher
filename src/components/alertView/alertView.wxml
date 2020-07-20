@@ -1,0 +1,33 @@
+<view class="_div data-v-c84fc2ec alert-view" catchtouchmove="catchMove" wx:if="{{isVisible}}">
+    <view class="_div data-v-c84fc2ec course-content bgc-fff">
+      <view class="_div data-v-c84fc2ec course-info-img">
+        <image src="../../public/images/course-info-img.png" class="_img data-v-c84fc2ec"></image>
+      </view>
+      <view class="_div data-v-c84fc2ec course-info-box">
+        <view class="_p data-v-c84fc2ec color-2E3 f-17 course-title f-b">{{title}}</view>
+        <view class="_div data-v-c84fc2ec course-box">
+          <view class="_div data-v-c84fc2ec course-info mt20">
+            <view class="_div data-v-c84fc2ec course-name color-959 f-14">所属课程：</view>
+            <view class="_div data-v-c84fc2ec course-text color-000 f-14">{{coursetype}}</view>
+          </view>
+          <view class="_div data-v-c84fc2ec course-info mt20">
+            <view class="_div data-v-c84fc2ec course-name color-959 f-14">考试时间：</view>
+            <view class="_div data-v-c84fc2ec course-text color-000 f-14">{{time}}分钟</view>
+          </view>
+          <view class="_div data-v-c84fc2ec course-info mt20">
+            <view class="_div data-v-c84fc2ec course-name color-959 f-14">难易程度：</view>
+            <view class="_div data-v-c84fc2ec course-text color-000 f-14">{{difficultyDegree}}</view>
+          </view>
+          <view class="_div data-v-c84fc2ec course-info mt20">
+            <view class="_div data-v-c84fc2ec course-name color-959 f-14">试卷满分：</view>
+            <view class="_div data-v-c84fc2ec course-text color-000 f-14">{{score}}分</view>
+          </view>
+          <view class="_div data-v-c84fc2ec course-info mt20">
+            <view class="_div data-v-c84fc2ec course-name color-959 f-14">通过分数：</view>
+            <view class="_div data-v-c84fc2ec course-text color-000 f-14">{{adoptscore}}分</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-c84fc2ec start-btn color-fff f-17" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">开始做题</view>
+    </view>
+  </view>

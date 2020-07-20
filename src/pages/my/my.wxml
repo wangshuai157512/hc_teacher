@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<view class="container">
+  <Dialog
+          bind:closeDialog="closeDialog"
+          isOpenDialog="{{isOpenDialog}}"
+          code="{{LJBM}}"/>
+  <view class="userinfo">
+    <!--<form wx:if="{{!hasUserInfo}}" report-submit="true" bindsubmit="formSubmit">-->
+      <!--<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" form-type="submit">授权登录</button>-->
+    <!--</form>-->
+    <view class="msg">
+      <view wx:if="{{!hasUserInfo}}" class="msg_view">
+        <image class="bg" src="../../public/images/bg.jpg"></image>
+        <image class="userinfo-avatar" src="../../public/images/normal_person.png" mode="cover"></image>
+        <view class="user_box">
+          <text class="userinfo-nickname">授权登录</text>
+        </view>
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" form-type="submit" class="login">授权登录</button>
+      </view>
+      <view wx:else class="msg_view">
+        <image class="bg" src="../../public/images/bg.jpg"></image>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="user_box">
+          <text class="userinfo-nickname">{{userInfo.user}}</text>
+        </view>
+      </view>
+      <view wx:if="{{hasUserInfo && system !='ios'}}">
+        <!--<navigator url="/pages/myDetail/myDetail"
+                   class="navigater"
+                   hover-class="navigator-hover">
+          <image class="navigater_sign" src="../../public/images/person.png"></image>
+          <view>
+            <text>个人信息</text>
+          </view>
+          <image class="link_corner" src="../../public/images/corner.png"></image>
+        </navigator>-->
+        <navigator url="/pages/myOrder/myOrder"
+                   class="navigater"
+                   hover-class="navigator-hover">
+          <image class="navigater_sign" src="../../public/images/order-icon.png"></image>
+          <text>我的订单</text>
+          <image class="link_corner" src="../../public/images/corner.png"></image>
+        </navigator>
+        <!--<navigator url="/pages/demo/demo"
+                   class="navigater"
+                   hover-class="navigator-hover">
+          <image class="navigater_sign" src="../../public/images/person.png"></image>
+          <text>支付页面</text>
+          <image class="link_corner" src="../../public/images/corner.png"></image>
+        </navigator>-->
+        <view class="navigater" hover-class="navigator-hover" bindtap='cunpon'>
+          <image class="navigater_sign" src="../../public/images/icon_top.png"></image>
+          <text>我的优惠券</text>
+          <image class="link_corner" src="../../public/images/corner.png"></image>
+          <button style="width: 100%;opacity:0;position: absolute;" bindtap="openFrame">我的领奖凭证</button>
+        </view>
+      </view>
+      <view class="navigater" hover-class="navigator-hover">
+        <image class="navigater_sign" src="../../public/images/icon_bot.png"></image>
+        <text>联系客服</text>
+        <image class="link_corner" src="../../public/images/corner.png"></image>
+        <button open-type="contact" class="link" style="width: 100%;opacity:0;position: absolute;" bindcontact="handleContact">联系客服</button>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <view>
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,182 @@
+
+.question-title-text {
+  font-size: 34rpx;
+  color: #2E3033;
+  padding: 40rpx 50rpx 30rpx;
+  font-weight: bold;
+}
+.parser-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 34rpx;
+}
+.parser-answer {
+  font-size: 30rpx;
+}
+.parser-text.parser-title {
+  font-weight: bold;
+}
+.answer-list-box {
+  box-sizing: border-box;
+  padding: 0 50rpx;
+  background-color: #fff;
+}
+.answer-list-box .answer-list .answer-item.answer-item-selected-style {
+  border: 2rpx solid #7fc8ff;
+}
+.answer-list-box .answer-list .answer-item {
+  margin-bottom: 24rpx;
+  background: white;
+  box-shadow: 0 4rpx 20rpx 0 rgba(0, 0, 0, 0.06);
+  border-radius: 10rpx;
+  border: 2rpx solid transparent;
+}
+.answer-list-box .answer-list .answer-item .answer-item-content {
+  display: flex;
+  align-items: center;
+  padding: 35rpx 0 35rpx 30rpx;
+}
+.answer-list-box .answer-list .answer-item .answer-item-default.alphabet-item {
+  color: #3083EF;
+  background-color: #F0F0F0;
+}
+.answer-list-box .answer-list .answer-item .answer-item-selected.alphabet-item {
+  color: #fff;
+  background-color: #3083EF;
+}
+.answer-list-box .answer-list .answer-item .answer-item-error.alphabet-item {
+  color: #fff;
+  background-color: #F46077;
+}
+.answer-list-box .answer-list .answer-item .alphabet-item {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 30rpx 0 0;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 30rpx;
+}
+.html-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.8;
+}
+.level-ele.data-v-409837b2 {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f1f5f9;
+}
+.lookanswer.data-v-409837b2 {
+  display: flex;
+  padding: 0 50rpx 49rpx;
+}
+.lookanswer .close ._img.data-v-409837b2 {
+  transform: rotate(90deg);
+}
+.lookanswer .look ._img.data-v-409837b2 {
+  transform: rotate(-90deg);
+}
+.lookanswer ._span.data-v-409837b2 {
+  font-size: 30rpx;
+}
+.lookanswer ._img.data-v-409837b2 {
+  width: 22rpx;
+  height: 22rpx;
+  margin-left: 11rpx;
+}
+.answer__analysis.data-v-409837b2 {
+  background-color: #fff;
+}
+.answer-box.data-v-409837b2 {
+  box-sizing: border-box;
+  padding: 45rpx 50rpx 0;
+}
+.answer-box-content.data-v-409837b2 {
+  padding-bottom: 48rpx;
+  border-bottom: 2rpx solid #f4f9ff;
+}
+.parser.data-v-409837b2 {
+  color: #667891;
+  font-size: 28rpx;
+  padding-top: 31rpx;
+}
+.arrow-trans.data-v-409837b2 {
+  display: inline-block;
+  margin-left: 10rpx;
+  width: 12rpx;
+  height: 18rpx;
+  background: url("https://app.51xcjyw.com/apicenter/guola-images/guola-images/plan-arrow-right-blue.png") no-repeat 0 0;
+  background-size: contain;
+}
+.question-title-box.data-v-409837b2 {
+  background-color: #fff;
+  padding-bottom: 20rpx;
+}
+.detail-item__title.data-v-409837b2 {
+  font-size: 30rpx;
+  color: #464D5C;
+}
+.lookanswewr-text.data-v-409837b2 {
+  color: #438ffc;
+}
+.title-box.data-v-c27dbd8c {
+  box-sizing: border-box;
+  padding: 38rpx 32rpx;
+  display: flex;
+  align-items: center;
+}
+.title-box .vertical-box.data-v-c27dbd8c {
+  width: 8rpx;
+  height: 40rpx;
+  background: linear-gradient(180deg, #64a7ff 0%, #3083ef 100%);
+  border-radius: 8rpx;
+}
+.purchase-course-box.data-v-4aa10895 {
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.3);
+}
+.purchase-course-box .purchase-course-price.data-v-4aa10895 {
+  display: flex;
+  align-items: center;
+  padding-left: 32rpx;
+  width: 50%;
+}
+.purchase-course-box .purchase-course-price .purchase-course-price-content.data-v-4aa10895 {
+  display: flex;
+  align-items: flex-end;
+}
+.purchase-course-box .purchase-course-price .purchase-course-price-content ._span.data-v-4aa10895 {
+  display: inline-flex;
+}
+.purchase-course-box .purchase-course-price .purchase-course-price-content .available-price.data-v-4aa10895 {
+  border-radius: 100rpx;
+  background: rgba(255, 136, 0, 0.1);
+  border: 2rpx solid #ff8800;
+  padding: 6rpx 16rpx;
+  margin: 0 8rpx 4rpx 8rpx;
+}
+.purchase-course-box .purchase-course-price .purchase-course-price-content .original-price.data-v-4aa10895 {
+  height: 100%;
+  text-decoration: line-through;
+  display: inline-flex;
+  align-items: flex-end;
+}
+.purchase-course-box .purchase-course-price .purchase-course-price-content .now-price.data-v-4aa10895 {
+  line-height: 1;
+}
+.purchase-course-box .purchase-course-btn.data-v-4aa10895 {
+  width: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background: linear-gradient(to right, #FFBB33, #FF8800);
+}
+.is-active0.data-v-4aa10895 {
+  display: flex;
+  justify-content: center;
+}

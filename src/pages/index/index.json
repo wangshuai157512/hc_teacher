@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "教师资格精品课",
+  "onReachBottom" : true,
+  
+  "usingComponents": {
+    "getCoupon": "../../components/getCoupon/getCoupon",
+    "image-loader": "../../components/imgLoader/imgLoader"
+  }
+  
+}

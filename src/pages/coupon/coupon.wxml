@@ -1,0 +1,47 @@
+<view class="title">
+  <view wx:for="{{titleList}}" wx:key="index" bind:tap="tapShow" data-index="{{index}}">
+    <view class="{{indexTab == index? 'title_change':''}} title-tab-text">{{item}}</view>
+    <view class="{{indexTab == index? 'graph':''}}" ></view>
+  </view>
+</view>
+
+<view class="swiper-box">
+  <swiper id="swiper-content" current="{{indexTab}}" bindchange="swiperChange" duration="300">
+    <swiper-item wx:for="{{titleList}}" wx:key="index">
+      <scroll-view class="scroll-box" scroll-y>
+        <view wx:if="{{indexTab===0}}" class="coupon-component">
+            <block wx:if="{{couponList.length >= 1}}">
+                <Coupon
+                        wx:for="{{couponList}}"
+                        wx:key="index"
+                        bgc="orange"
+                        price="{{item.price}}"
+                        courseName="{{item.coupon_name}}"
+                        expirationTime="{{item.startTime}} - {{item.endTime}}"
+                        state="{{item.state}}"
+                        bind:sonCoupon="onsonCoupon"
+                ></Coupon>
+            </block>
+            <view wx:else class="tips">暂无未使用优惠券</view>
+        </view>
+        <view wx:elif="{{indexTab===1}}" class="coupon-component">
+            <block wx:if="{{couponList.length != 0}}">
+                <Coupon
+                        wx:for="{{couponList}}"
+                        wx:key="index"
+                        bgc="default"
+                        price="{{item.price}}"
+                        courseName="{{item.coupon_name}}"
+                        expirationTime="{{item.startTime}} - {{item.endTime}}"
+                        state="{{item.state}}"
+                ></Coupon>
+            </block>
+            <view wx:else class="tips">暂无已使用优惠券</view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+

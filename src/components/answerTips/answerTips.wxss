@@ -1,0 +1,52 @@
+@import "../../pages/common/common.wxss";
+@import "../../pages/common/vendor.wxss";
+.wrap {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon {
+  display: block;
+  width: 252rpx;
+  height: 131rpx;
+  margin: 312rpx auto 0rpx;
+}
+
+.content {
+  font-size: 30rpx;
+  color: rgba(167, 177, 188, 1);
+  text-align: center;
+  margin-top: 37rpx;
+}
+.function {
+  display: flex;
+  justify-content: space-between;
+  height: 84rpx;
+  padding: 0 36rpx;
+  box-sizing: border-box;
+  margin-bottom: 180rpx;
+}
+
+.function .button {
+  width: 321rpx;
+  height: 100%;
+  border-radius: 4px;
+  font-size: 36rpx;
+  line-height: 84rpx;
+  text-align: center;
+
+}
+
+.function .check {
+  color: rgba(93, 157, 232, 1);
+  border: 1rpx solid #3083EF;
+  box-sizing: border-box;
+}
+
+.function .submit {
+  background: rgba(93, 157, 232, 1);
+  color: #fff;
+}

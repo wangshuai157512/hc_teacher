@@ -1,0 +1,144 @@
+<!--index.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab" wx:if="{{system !='ios'}}">已支付</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab" wx:if="{{system !='ios'}}">未支付</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">已关闭</view>
+</view>
+
+<!--<view class="loading"  wx:if="{{loading === 1}}">-->
+  <!--<text>加载中...</text>-->
+<!--</view>-->
+
+<swiper class="swiper" current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <view>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: 100%">
+        <view class="loading" wx:if="{{loading === 0}}">
+          <view>
+            <image src="../../public/images/no_order.png" class="no_pic" bindtap="go_index"></image>
+          </view>
+          <text style="color: #60656C;">暂无相关订单哦</text>
+        </view>
+        <view wx:else style="padding-bottom: 30rpx">
+          <view id="list{{currentTab}}" wx:for="{{list}}" class="list" wx:key="index" data-isData="{{item.isData}}" data-courseId="{{item.courseId}}" data-suitablePerson="{{item.suitablePerson}}" bindtap="handleSee">
+            <view class="box_t">
+              <text class="text_merch">订单编号：{{item.merchOrderId}}</text>
+              <text class="text_ispay" wx:if="{{system !='ios'}}">已支付</text>
+            </view>
+            <view class="box_b">
+              <view class="box_b_t">
+                <image src="{{normalUrl}}{{item.imgUrl}}" class="image"></image>
+                <view class="box_b_t_text">
+                  <text class="b_t_title">{{item.title}}</text>
+                  <text class="b_t_price" wx:if="{{system !='ios'}}">￥{{item.actualPayMoney}}</text>
+                </view>
+              </view>
+              <view class="order-time-wrap">
+                <text class="order-time">{{item.date}}</text>
+              </view>
+            </view>
+            <view class="{{index == list.length-1? '' : 'wire_box'}}">
+              
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: 100%">
+        <view class="loading" wx:if="{{loading === 0}}">
+          <view>
+            <image src="../../public/images/no_order.png" class="no_pic" bindtap="go_index"></image>
+          </view>
+          <text style="color: #60656C;">暂无相关订单哦</text>
+        </view>
+        <view wx:else style="padding-bottom: 30rpx">
+          <view wx:for="{{list}}" class="list" wx:key="index">
+            <view class="box_t">
+              <text class="text_merch">订单编号：{{item.merchOrderId}}</text>
+              <text class="text_ispay">未支付</text>
+            </view>
+            <view class="box_b">
+              <view class="box_b_t">
+                <image src="{{normalUrl}}{{item.imgUrl}}" class="image"></image>
+                <view class="box_b_t_text">
+                  <text class="order-title">{{item.title}}</text>
+                  <text class="order-price">￥{{item.shouldPayMone}}</text>
+                </view>
+                <view class="expiry_data">
+                  剩余<text>{{timeList[index].time}}</text>
+                </view>
+              </view>
+              <view class="order-item">
+                <view class="order-time-wrap">
+                  <text class="order-time">{{item.date}}</text>
+                </view>
+                <view class="order-button-wrap">
+                  <view class="box_b_b">
+                    <button
+                            class="cancel-button"
+                            bindtap="cancelPay"
+                            data-id="{{item.id}}"
+                            data-index="{{index}}"
+                            data-isData="{{item.isData}}"
+                    >取消订单</button>
+                  </view>
+                  <view class="box_b_b" wx:if="{{system !='ios'}}">
+                    <button
+                            class="pay-button"
+                            bindtap="paymentOrder"
+                            data-outTradeNo="{{item.merchOrderId}}"
+                            data-nonceStr="{{item.nonceStr}}"
+                            data-title="{{item.title}}"
+                            data-price="{{item.shouldPayMone}}"
+                            data-courseId="{{item.courseId}}"
+                            data-isData="{{item.isData}}"
+                            data-courseType="{{item.type}}"
+                    >立即支付</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+             <view class="{{index == list.length-1? '' : 'wire_box'}}">
+              
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: 100%">
+        <view class="loading" wx:if="{{loading === 0}}">
+          <view>
+            <image src="../../public/images/no_order.png" class="no_pic" bindtap="go_index"></image>
+          </view>
+          <text style="color: #60656C;">暂无相关订单哦</text>
+        </view>
+        <view wx:else style="padding-bottom: 30rpx">
+          <view wx:for="{{list}}" class="list" wx:key="index" >
+            <view class="box_t">
+              <text class="text_merch">订单编号：{{item.merchOrderId}}</text>
+              <text class="text_ispay">已关闭</text>
+            </view>
+            <view class="box_b">
+              <view class="box_b_t">
+                <image src="{{normalUrl}}{{item.imgUrl}}" class="image"></image>
+                <view class="box_b_t_text" >
+                  <text class="order-title">{{item.title}}</text>
+                  <text class="order-price" wx:if="{{system !='ios'}}">￥{{item.shouldPayMone}}</text>
+                </view>
+              </view>
+              <view class="box_b_b delete-order">
+                <text class="order-time">{{item.date}}</text>
+                <button class="delete-order-button" bindtap="deleteOrder" data-id="{{item.id}}" data-index="{{index}}" data-isData="{{item.isData}}">删除订单</button>
+              </view>
+            </view>
+             <view class="{{index == list.length-1? '' : 'wire_box'}}">
+              
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </view>
+</swiper>

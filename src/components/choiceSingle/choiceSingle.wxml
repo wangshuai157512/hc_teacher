@@ -1,0 +1,24 @@
+<view class="_div data-v-85e4d2e0">
+    <view class="_div data-v-85e4d2e0 question-title-text bgc-fff">
+      <!--<parser html="{{title}}" class="_parser data-v-85e4d2e0 color-2e3"></parser>-->
+      <wxparser rich-text="{{title}}" class="_parser data-v-85e4d2e0 color-2e3"></wxparser>
+     <!--<rich-text wx:else nodes="{{title}}" class="_div data-v-85e4d2e0 parser-text parser-title color-2e3"></rich-text>-->
+    </view>
+    <view class="_div data-v-85e4d2e0 answer-list-box">
+      <view class="_div data-v-85e4d2e0 answer-list">
+        <view class="_div data-v-85e4d2e0 answer-item {{[answerIndex === select_index ? 'answer-item-selected-style' : '']}}" wx:key="answerIndex" key="{{answerIndex}}" bindtap="handleCheck" data-index="{{answerIndex}}" data-item="{{answerImte}}" wx:for="{{optionList}}" wx:for-index="answerIndex" wx:for-item="answerImte">
+          <view class="_div data-v-85e4d2e0 answer-item-content">
+            <view wx:if="{{true}}" class="_div data-v-85e4d2e0">
+              <view class="_div data-v-85e4d2e0 alphabet-item {{[answerIndex === select_index ? 'answer-item-selected' : 'answer-item-default']}}">{{alphabet[answerIndex]}}</view>
+            </view>
+            <view wx:else class="_div data-v-85e4d2e0">
+              <view class="_div data-v-85e4d2e0 alphabet-item {{[  state === 'selected' && selectId === answerImte.id    ? 'answer-item-selected'    : 'answer-item-default']}}">{{alphabet[answerIndex]}}</view>
+            </view>
+            <rich-text nodes="{{answerImte.content}}" class="_div data-v-85e4d2e0 parser-text parser-answer color-2e3" wx:if="true"></rich-text>
+            <!--<wxparser rich-text="{{answerImte.content}}" class="_div data-v-85e4d2e0 parser-text parser-answer color-2e3" wx:if="true"></wxparser>-->
+            <view wx:else class="_div data-v-85e4d2e0 parser-text parser-answer color-2e3">{{answerImte.content}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

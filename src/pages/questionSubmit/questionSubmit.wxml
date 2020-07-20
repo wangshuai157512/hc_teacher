@@ -1,0 +1,64 @@
+<view class="_div data-v-6176d5d4">
+    <view class="_div data-v-6176d5d4 report-info">
+      <view class="_div data-v-6176d5d4 module">
+        <view class="_div data-v-6176d5d4 name">正确率 (%)</view>
+        <view class="_div data-v-6176d5d4 content correct">{{correctRate}}%</view>
+      </view>
+      <view class="_div data-v-6176d5d4 module">
+        <view class="_div data-v-6176d5d4 name">练习用时 (分钟)</view>
+        <view class="_div data-v-6176d5d4 content minute">{{minute}}</view>
+      </view>
+    </view>
+    <view class="_div data-v-6176d5d4 report-detail">
+      <view class="_div data-v-6176d5d4 module">
+        <image class="_img data-v-6176d5d4 icon" src="https://app.51xcjyw.com/apicenter/guola-images/guola-images/icon-answer-report-count.png"></image>
+        <view class="_div data-v-6176d5d4 name">共计</view>
+        <view class="_div data-v-6176d5d4 content">{{totalNum}}道</view>
+        <view class="_div data-v-6176d5d4"></view>
+      </view>
+      <view class="_div data-v-6176d5d4 module">
+        <image class="_img data-v-6176d5d4 icon" src="https://app.51xcjyw.com/apicenter/guola-images/guola-images/icon-answer-report-right.png"></image>
+        <view class="_div data-v-6176d5d4 name">答对</view>
+        <view class="_div data-v-6176d5d4 content">{{correct}}道</view>
+        <view class="_div data-v-6176d5d4"></view>
+      </view>
+      <view class="_div data-v-6176d5d4 module">
+        <image src="https://app.51xcjyw.com/apicenter/guola-images/guola-images/icon-answer-report-error.png" class="_img data-v-6176d5d4 icon"></image>
+        <view class="_div data-v-6176d5d4 name">答错</view>
+        <view class="_div data-v-6176d5d4 content">{{incorrect}}道</view>
+        <view class="_div data-v-6176d5d4"></view>
+      </view>
+      <view class="_div data-v-6176d5d4 module">
+        <image src="https://app.51xcjyw.com/apicenter/guola-images/guola-images/icon-answer-report-unwrite.png" class="_img data-v-6176d5d4 icon"></image>
+        <view class="_div data-v-6176d5d4 name">未作答</view>
+        <view class="_div data-v-6176d5d4 content">{{noanswer}}道</view>
+      </view>
+      <view class="_div data-v-6176d5d4 chapter">
+        <view class="_div data-v-6176d5d4 back-chapter chapter-style">
+          <view class="_div data-v-6176d5d4 chapter-btn color-667" bindtap="handleIndex" data-eventid="{{'0'}}" data-comkey="{{$k}}">返回章节目录</view>
+        </view>
+        <view class="_div data-v-6176d5d4 next-chapter chapter-style">
+          <view class="_div data-v-6176d5d4 chapter-btn color-308">作答下一章节</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-6176d5d4 answer-sheet bgc-fff">
+      <view class="_div data-v-6176d5d4 answer-sheet-view">
+        <scroll-view scroll-y="true" style="height: 100%" class="_scroll-view data-v-6176d5d4">
+          <view class="_div data-v-6176d5d4 section" wx:key="index" key="index" wx:for="{{questionList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-6176d5d4 question-name">{{item.name}}</view>
+            <view class="_div data-v-6176d5d4 rows">
+              <view class="_div data-v-6176d5d4 row-wrap" wx:key="index" key="index" wx:for="{{item.paperQuestionList}}" wx:for-index="questionIndex" wx:for-item="questionItem">
+                <view class="_div data-v-6176d5d4 row  {{[  [    questionItem.appraisal === 'correct' ? 'selected' : '',    questionItem.appraisal === 'incorrect' ? 'error' : '',    !questionItem.appraisal ? 'default' : ''  ]]}}" bindtap="handleCheck" data-swiperId="{{questionItem.swiperId}}" data-comkey="{{$k}}">{{questionIndex+1}}</view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class="_div data-v-6176d5d4 bottom-function-area">
+      <view class="_div data-v-6176d5d4 button button-white" bindtap="handleErr" data-eventid="{{'2'}}" data-comkey="{{$k}}">查看错误解析</view>
+      <view class="_div data-v-6176d5d4 button button-blue" bindtap="handleAll" data-eventid="{{'3'}}" data-comkey="{{$k}}">查看全部解析</view>
+    </view>
+    
+  </view>

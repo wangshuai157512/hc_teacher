@@ -1,0 +1,69 @@
+@import "../../pages/common/common.wxss";
+@import "../../pages/common/vendor.wxss";
+.level-ele {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f1f5f9;
+}
+.lookanswer{
+  display: flex;
+  padding: 0 50rpx 49rpx;
+  /*margin-top: 30rpx;*/ 
+}
+/* .close {
+ 
+} */
+.close image {
+    transform: rotate(90deg);
+  }
+/* .look {
+  
+} */
+.look image {
+  transform: rotate(-90deg);
+}
+span {
+  font-size: 30rpx;
+}
+image {
+  width: 100%;
+  /* height: 150rpx; */
+  margin-left: 11rpx;
+}
+.answer__analysis{
+  /*margin-top: 20rpx;*/
+  background-color: #fff;
+}
+.answer-box{
+  box-sizing: border-box;
+  padding: 45rpx 50rpx 0;
+}
+.answer-box-content{
+  padding-bottom: 48rpx;
+  border-bottom: 1px solid rgba(244,249,255,1);
+}
+.parser{
+  color:#667891;
+  font-size: 28rpx;
+  padding-top: 31rpx;
+}
+.arrow-trans {
+  display: inline-block;
+  margin-left: 10rpx;
+  width: 12rpx;
+  height: 18rpx;
+  background: url("https://app.51xcjyw.com/apicenter/guola-images/guola-images/plan-arrow-right-blue.png") no-repeat 0 0;
+  background-size: contain;
+}
+.question-title-box{
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+.detail-item__title{
+
+  font-size: 30rpx;
+  color: #464D5C;
+}
+.lookanswewr-text{
+  color: #438ffc;
+}

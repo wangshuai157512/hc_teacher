@@ -1,0 +1,10 @@
+<view class="data-list-box">
+    <view class="data-list">
+        <view
+             class="data-item"
+             wx:for="{{data_list}}"
+             wx:key="{{index}}"
+             data-id="{{item.id}}"
+        >{{item.title}}</view>
+    </view>
+</view>

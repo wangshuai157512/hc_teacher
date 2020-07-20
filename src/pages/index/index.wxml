@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="collection-box" wx:if="{{cancel}}">
+    <view class="sanjiao"></view>
+    <text class="collection-text">添加到我的小程序，随时听课</text>
+    <image src="../../public/images/close2.png" bindtap="handleCancel"></image>
+  </view>
+  <swiper interval="{{3000}}" class="{{currentSwiper==0? 'purple':''}} {{currentSwiper==1? 'bannerOrange':''}} {{currentSwiper==2? 'bannerSky':''}} {{currentSwiper==3? 'bannerBlue':''}}" circular='true' current="{{currentSwiper}}" bindchange="swiperChange" >
+    <block wx:for="{{banner_list}}" wx:key='index' >
+      <swiper-item>
+        <image src="{{item.img}}" class="bannerList" bindtap="linkTo" data-path='{{item.path}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+   <view class="dots">
+    <block wx:for="{{banner_list}}" wx:key="index">
+      <view class="dot {{index == currentSwiper  ? 'active' : ''}}"></view>
+    </block>
+  </view>
+  <view class="box"></view>
+  <view class="school">
+    <view class="school_student" bindtap="link" wx:for='{{schoolList}}' wx:key="index" data-id='{{item.courseId}}' data-suitablePerson='{{item.suiTablePerson}}' >
+      <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{item.imgUrl}}" width="100%" height="100%" />
+    </view>
+  </view>
+  <view class="course_package">
+    精品课程包
+  </view>
+  <view class="coures" bindtap="link" wx:for='{{list}}' wx:key="index" data-id='{{item.id}}' data-suitablePerson='{{item.suitablePerson}}'>
+    <view class="school_list">
+      <!--<image src="{{normalUrl}}{{item.imgUrl}}" />-->
+       <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{item.imgUrl}}" width="100%" height="100%" />
+    </view>
+    <view>
+      <view class="coures_title">
+        <text>{{item.title}}-</text>
+        <text class="title">{{period[item.suitablePerson]}}</text>
+      </view>
+      <view class="coures_hour">
+        {{item.introduce}}
+      </view>
+      <view class="coures_study" >
+        <text wx:for="{{item.tag}}" wx:key="index">{{item}}</text>
+      </view>
+      <view wx:if="{{system !='ios'}}">
+        <text class="coures_price">￥{{item.price}}</text>
+        <text class="coures_excellent" wx:if="{{item.suitablePerson < 3}}">限时特惠</text>
+        <text class="coures_excellent" wx:if="{{item.suitablePerson === 3}}">点击升级福利</text>
+      </view>
+    </view>
+    <view class="{{index == list.length-1? 'wire_b' : 'wire'}}">
+    </view>
+  </view>
+  <view class="consult" bindtap="linkTo">
+    <!--<button class="consult_btn" open-type="contact">-->
+      <image src="../../public/images/consult.png" />
+    <!--</button>-->
+  </view>
+  
+  <view wx:if="{{system !='ios'}}">
+    <view class="coupon-box" wx:if="{{!isHasCoupon}}">
+    <getCoupon cup="../../public/images/cup.jpg" type='0' user='{{user}}' bind:sonEvent="onSonEvent"></getCoupon>
+  </view>
+  </view>
+  <view  class="coupon-box" wx:if="{{reply}}">
+    <getCoupon cup="../../public/images/reply.jpg" type='1' bind:sonEvent="onSonEvent"></getCoupon>
+  </view>
+</view>

@@ -1,0 +1,58 @@
+<view>
+  <view class="title_img">
+    <image class="details_img {{finishLoadFlag? 'occupied':''}}" bindload='finishLoad' src="{{normalUrl}}{{teachInfo.bannerUrl}}"></image>
+  </view>
+  <view class='title_t'>
+    <view class='title_teacher'>
+    {{teachInfo.title}}
+    </view>
+    <view class="head_price" wx:if="{{system !='ios'}}">
+      <view class='title_money'>
+        <text>￥</text>
+        <text class='money_history'>{{teachInfo.price}}</text>
+        <text class="old_price">￥{{teachInfo.oldPrice}}</text>
+      </view>
+      <text class="money_history_pay" wx:if="{{system !='ios'}}">{{teachInfo.PayNum}}人已购买</text>
+    </view>
+  </view>
+  <view class="bg">
+  </view>
+  <view class="InformationOn" wx:for="{{teachInfo.img_list}}" wx:key="index" wx:if="{{system !='ios' || index!=1}}">
+    <!--<image class="details_img {{finishLoadFlag? 'occupied':''}}" bindload='finishLoad' src="{{normalUrl}}{{item.img_url}}" mode="widthFix"></image>-->
+    <image-loader class="details_img"  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{item.img_url}}" width="100%" height="100%" />
+  </view>
+  <view class="list_foot"></view>
+  <view class="foot" wx:if="{{system !='ios'}}">
+    <view class="foot_l">
+      <view class="foot_box">
+        <image src="../../public/images/customer.png"></image>
+        <text>客服</text>
+      </view>
+      <button open-type="contact"
+              bindcontact="handleContact"
+              class="custom">客服</button>
+    </view>
+    <view wx:if="{{!userInfo.user}}" class="foot_r">
+      <view>立即购买</view>
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="login_right">授权</button>
+    </view>
+    <view wx:elif="{{!userInfo.phone}}" class="foot_r">
+      <view>立即购买</view>
+      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="login_right">手机号</button>
+    </view>
+    <view class="foot_r" wx:elif="{{isPay}}">
+      <view bindtap="look">在线阅读</view>
+    </view>
+    <view class="foot_r" wx:else>
+      <view bindtap="linkTo" data-id='{{teachInfo.id}}'>立即购买</view>
+    </view>
+  </view>
+  <view class="ios-btn" wx:if="{{system =='ios'}}">
+    由于相关规范，ios功能暂不可用
+  </view>
+  <view class="consult" wx:if="{{system =='ios'}}">
+    <button class="consult_btn" open-type="contact">
+      <image src="../../public/images/consult.png" />
+    </button>
+  </view>
+</view>

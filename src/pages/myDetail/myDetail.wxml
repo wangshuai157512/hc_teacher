@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="items">
+    <text>姓名：</text>
+    <input type="text" bindinput="bindRealNameInput" value="{{realName}}" placeholder="请输入姓名" />
+  </view>
+  <view class="items">
+    <text>手机号：</text>
+    <input type="text" bindinput="bindPhoneInput" value="{{phone}}" type="number" placeholder="请输入手机号"/>
+  </view>
+  <view>
+    <button bindtap="submit">提交</button>
+  </view>
+</view>
+<camera device-position="back" flash="off" binderror="error" style="margin-left: 50rpx;width: 300rpx; height: 300rpx;">
+</camera>
+<image mode="widthFix" src="{{src}}"></image>
+<button bindtap="open" type="primary" data-type="takePhoto">拍照</button>

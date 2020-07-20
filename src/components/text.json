@@ -1,0 +1,2056 @@
+{
+    "data": {
+      "data": {
+        "arrangementId": "1b3a25e9-29fe-44a9-983b-c9b81a3a0ae0",
+        "role": "teacher",
+        "realpath": "/data/shareNfs/jlu-datafiles/ots/chengkao",
+        "title": "成考语文模拟试卷（2）",
+        "strcode": null,
+        "scrollTopHtml": "http://218.25.139.161:10038/venus/scrollTo_top.html",
+        "studentTestActivityScoreId": "dab8bc3c-5691-40e1-98fc-ca2f5e3dd240",
+        "subjectId": null,
+        "takePhotoInTest": false,
+        "forceDetails": 0,
+        "paper": {
+          "achievementType": 1,
+          "currentQuestionNum": 0,
+          "paperCategoryId": "da8022c4-ca85-464e-82bd-8afb9fb9497d",
+          "answerTimeLength": null,
+          "creatorId": "2e5dbd61-d95b-46ea-b6e3-1cad6a368655",
+          "questionCategoryItemCodes": [
+            "00003"
+          ],
+          "difficultyDegree": 1,
+          "showComment": true,
+          "isPrivate": 0,
+          "judgementmode": 2,
+          "showTotalScore": true,
+          "paperForm": 2,
+          "showEachScore": true,
+          "psOutputDto": [
+            {
+              "paperQuestionList": null,
+              "realEachScore": null,
+              "level": 1,
+              "totalscore": "0.0",
+              "eachQuestionScore": null,
+              "sequencenumber": "",
+              "usedsequence": "",
+              "isSameScore": true,
+              "parentId": "",
+              "sequence": 1,
+              "totalquestion": 0,
+              "name": null,
+              "comment": null,
+              "id": "fe8473af-f1a5-49e4-990f-66c8a6783e1b"
+            },
+            {
+              "paperQuestionList": [
+                {
+                  "solvingProcess": "本题考查了现代汉语的字形。B选项中第一个应为通牒。",
+                  "sequenceNumber": "1",
+                  "questionId": "eebc94a0-5178-4b88-a2d2-2e4699fb0da2",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "1",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>酬劳 莅临 巧言令色</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>通谍 矜持 进退维谷</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>诠释 琐议 文过饰非</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>就绪 会晤 卧薪尝胆</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 1,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "1"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各组词语中，有错别字的一组是(　　)",
+                  "batchNumber": "eebc94a0-5178-4b88-a2d2-2e4699fb0da2"
+                },
+                {
+                  "solvingProcess": "A.首句改为“我报收到大量群众来信，其中……”；C.删去“的足迹”，或将“踏遍了”改为“遍布”；D.“无妄之灾”改为“灾难”。",
+                  "sequenceNumber": "2",
+                  "questionId": "64b6f20c-02fe-45f4-b476-87a84e697e84",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "2",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>我报收到的群众来信中，反映这方面问题的读者来信始终没有间断过。</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>谁又能否认任何新生事物都是在斗争中成长壮大起来呢!</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>扶贫工作组的同志们经常下到农村了解情况，他们的足迹踏遍了黄冈的五十多个乡镇。</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>大家事先都知道这场灾难势必难免，政府也作了移民安排，但还是有人没有逃脱这场无妄之灾。</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 2,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "1"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各句，没有语病的一句是（ ）",
+                  "batchNumber": "64b6f20c-02fe-45f4-b476-87a84e697e84"
+                },
+                {
+                  "solvingProcess": "本题考查了结合语境正确使用语言的能力。按照观察和时间的顺序可知②应该在③的前面，排除A、C两项。又因为“漫天飞舞”的主语应该是“雪花”，所以①应该在⑥的前面，故答案选D。",
+                  "sequenceNumber": "3",
+                  "questionId": "ec2b1089-30ea-4be5-a5f1-1c54c469c1a7",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "3",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>③②①④⑥⑤</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>②③⑥①④⑤</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>③①⑥④⑤②</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>②③①⑥④⑤</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 3,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "3"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>依次填入下面横线处的句子，顺序最恰当的一项是(　　)</span></p><p><span>____，____，____，____，____，____。我回到四叔的书房里时，瓦楞上已经雪白，房里也映得较光明。</span></p><p><span>①雪花大的有梅花那么大</span></p><p><span>②天色愈阴暗了</span></p><p><span>③下午竟下起雪来</span></p><p><span>④夹着烟霭和忙碌的气色</span></p><p><span>⑤将鲁镇乱成一团糟</span></p><p><span>⑥满天飞舞</span></p>",
+                  "batchNumber": "ec2b1089-30ea-4be5-a5f1-1c54c469c1a7"
+                },
+                {
+                  "solvingProcess": "A选项“困扰”指围困并搅扰，“困惑”指感到疑难，不知道该怎么办。从句子来看，后面跟着宾语世界，因此只能用“困扰”。B选项“纠纷”指争执不下的事或不易解决的事情，也有交错杂乱貌；纷扰；杂乱；犹纠缠或争执的事情之意。“争端”是由多人引起的争论，具体指对某件事或物有着不同的见解，意见不一致导致的。争端更为正式，如国际争端、贸易争端。C选项“侵蚀”指逐渐侵害使变坏或指岩石经自然侵蚀风化。“侵吞”指暗中非法占有（别人的东西或公共的财物、土地等）。因此这里应该用侵吞。D选项“开拓”是开辟，拓展，“拓宽”指开拓使宽广，句中强调要“进一步”因此应该用“拓宽”。",
+                  "sequenceNumber": "4",
+                  "questionId": "eb4628ab-df74-48c3-bce6-437b460416b0",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "4",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>困扰 纠纷 侵蚀 开拓</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>困惑 纠纷 侵吞 拓宽</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>困惑 争端 侵蚀 开拓</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>困扰 争端 侵吞 拓宽</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 4,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "3"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>依次填入下列各句横线处的实词，最恰当的一组是（ ）</span></p><p><span>(1)计算机最初一批设计者表达年份时简单地使用了二位数字，从而造成了____世界的“千年难题”。</span></p><p><span>(2)美国最高法院12月1日就佛罗里达州总统选举计票____举行了听证会。</span></p><p><span>(3)要查清国有企业目前的财政状况，防止个别企业、个人借改革之机大肆____国家财产。</span></p><p><span>(4)我们要让世界了解中关村，进一步 ____与各国IT业的交流渠道，以便取长补短。</span></p>",
+                  "batchNumber": "eb4628ab-df74-48c3-bce6-437b460416b0"
+                },
+                {
+                  "solvingProcess": "A选项中二、三分句语意不连贯，B选项语言不得体，不像法院说的话；C选项用语不简明，“驳回了程某的诉讼请求”与“原告请求不予支持”重复。",
+                  "sequenceNumber": "5",
+                  "questionId": "9b5f94aa-2a10-4086-99f2-4c0550cf0b26",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "5",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>广告上只出现了有程某鼻子和嘴的半张脸，它不是法律意义上的肖像，根本不能反映人的神情面貌</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>广告上出现的是只有程某鼻子和嘴巴的半张脸，哪能算是什么肖像？要求赔钱不合理</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>广告上只出现了有程某鼻子和嘴的半张脸，它不能算是肖像。驳回了程某的诉讼请求</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>广告上出现的只是有程某鼻子和嘴的半张脸，它不能反映人的神情面貌，根本不是法律意义上的肖像</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 5,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "3"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>填入下面这则新闻空缺处的语句，恰当的一项是(　　)</span></p><p><span>本报讯程某在一份交通旅游图上发现某医院把自己治疗脸部斑痕的照片做成了广告，她认为这是侵害了肖像权，于是把医院、出版社和广告公司一并诉至法院，要求赔偿。法院认为，____。原告请求不予支持。</span></p>",
+                  "batchNumber": "9b5f94aa-2a10-4086-99f2-4c0550cf0b26"
+                },
+                {
+                  "solvingProcess": "清莹：洁净透明。轻盈：泛指轻巧柔美。所以第一处应填清莹。淡薄：不浓厚。淡泊：一是对于名利淡漠，不看重；二是家道清贫；三是恬淡寡欲。所以第二处用淡泊。流失：泛指有用的东西流散失去。流逝：形容迅速消逝。第三次用流逝。",
+                  "sequenceNumber": "6",
+                  "questionId": "e645e8cc-a420-45cf-bb38-b6fa581d9e97",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "6",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>清莹 淡薄 流失</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>轻盈 淡泊 流失</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>轻盈 淡薄 流逝</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>清莹 淡泊 流逝</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 6,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "3"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>依次填入下面横线处的词语，恰当的一组是(　　)</span></p><p><span>①勇往直前的汩汩泉水相信，在岁月的过滤与涤荡下自己将永远一脉____。</span></p><p><span>②由于摆脱了功利之争，田园山水诗人便有了一种恬静____的心境。</span></p><p><span>③时间的长河无影无形，看不见摸不着，每天都在悄无声息地____。</span></p>",
+                  "batchNumber": "e645e8cc-a420-45cf-bb38-b6fa581d9e97"
+                },
+                {
+                  "solvingProcess": "本题考查了现代汉语的字形。A选项没有错别字，其他选项正确字应为B选项松弛；C选项天翻地覆；D选项言简意赅。",
+                  "sequenceNumber": "7",
+                  "questionId": "48744244-650c-4ab1-bd30-dbef6d678f3a",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "7",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>乖戾 过谦 荒无人烟</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>松驰 聒噪 看风使舵</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>聆听 门禁 天翻地复</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>双赢 户籍 言简意骇</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 7,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "0"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各组词语中没有错别字的一项是(　　)",
+                  "batchNumber": "48744244-650c-4ab1-bd30-dbef6d678f3a"
+                },
+                {
+                  "solvingProcess": "该语段的语言风格是风趣型的，这就决定了它应区别于一般的记叙。句②运用了拟人的手法较第一句更有活力；句③运用了反诘语气比④的疑问语气生动。故选B。",
+                  "sequenceNumber": "8",
+                  "questionId": "9d8be6b0-af0c-449e-8bb9-9faa654606f1",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "8",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>①④</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>②③</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>②④</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>①③</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 8,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "1"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>填入横线处，语气自然而有情趣的一组句子是（ ）</span></p><p><span>过了两道小门，真是眼前豁然开朗，另有天地。一眼先是亭亭直上，又刚健又婀娜的白皮松。白皮松不算奇，多得好，____疏得好，要像住宅的院子里，____这儿就是院子大得好，就是四方八面都来得好。</span></p><p><span>①棵挨着棵，枝连着枝，显得挤得慌，</span></p><p><span>②你挤着我我挤着你也不算奇，</span></p><p><span>③四角上各来上一棵，疏不是？谁爱看？</span></p><p><span>④四角上各种一棵，疏是疏了，可是不好看。</span></p>",
+                  "batchNumber": "9d8be6b0-af0c-449e-8bb9-9faa654606f1"
+                },
+                {
+                  "solvingProcess": "本题考查了结合语境正确使用语言的能力。选文第一句和第二句为下文做铺垫，后三句与前两句中的事物一一对应。左边……右边……。有客……有客……。塔……桥……，寺……河……，…诗…画。",
+                  "sequenceNumber": "9",
+                  "questionId": "d843c6ac-fc49-4316-8cf8-e40eb36f723b",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "9",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>②①③④⑤⑥</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>③④②①⑥⑤</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>③②①⑤⑥④</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>①④②③⑤⑥</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 9,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "1"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>依次填入下面横线处的句子，顺序最恰当的一项是(　　)</span></p><p><span>左边是园，右边是园。是塔是桥，是寺是河，是诗是画，是石径是帆船。左边的园修复了，____。有客自海上来，____。塔更挺拔，____，寺更幽凝，____，____，____。</span></p><p><span>①河更热闹②桥更洗练③右边的园开放了④有客自异乡来⑤帆船应入画⑥石径好吟诗</span></p>",
+                  "batchNumber": "d843c6ac-fc49-4316-8cf8-e40eb36f723b"
+                },
+                {
+                  "solvingProcess": "本题考查了现代汉语的字形。A项中“风雨飘遥”的“遥”应改为“摇”；B项中没有错别字；C项中“墨契”的“墨”应改为“默”，“简明厄要”的“厄”应改为“扼”；D项中“料俏”的“俏”应改为“峭”，“羁伴”的“伴”应改为“绊”，“似无忌惮”的“似”应改为“肆”。",
+                  "sequenceNumber": "10",
+                  "questionId": "2587cd56-2152-49e5-80a7-106416f05414",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "10",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>际遇 辑录 风雨飘遥</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>蒙昧 迷惘 处之泰然</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>豁达 墨契 简明厄要</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>料俏 羁伴 似无忌惮</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 10,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "1"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各组词语中没有错别字的一项是(　　)",
+                  "batchNumber": "2587cd56-2152-49e5-80a7-106416f05414"
+                },
+                {
+                  "solvingProcess": "从 ，动态介词，多表示处所、时间、状态、范围的起点，事物来源，经由路线等；在，静态介词，表示行为、动作发生的时间、处所、范围。书面语色彩比较浓郁的动词，如“查封”，不宜于用“让”，只能用“被”。“关于”要求带名词性宾语。",
+                  "sequenceNumber": "11",
+                  "questionId": "d43fac9d-4365-43b0-b85d-84e6eb220511",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "11",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>从 让 至于</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>在 让 关于</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>从 被 关于</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>在 被 至于</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 11,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "3"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>依次填入口下列各句横线处的词语，最恰当的一项是(　　)</span></p><p><span>①他把____家里受苦的情况都讲了出来。</span></p><p><span>②鲁迅主编的刊物____反动当局查封了。</span></p><p><span>③____是否应聘，我还没有做出最后决定。</span></p>",
+                  "batchNumber": "d43fac9d-4365-43b0-b85d-84e6eb220511"
+                },
+                {
+                  "solvingProcess": "本题考查了结合语境正确使用语言的能力。“梦境”只有先出现，才会被“顽皮的鱼鹰搅破”，按照逻辑顺序，③应该在①的前面，排除A、C两项。又因为只有“小竹筏子”先出现，才会有鱼鹰停在竹筏子的梢上，所以⑦在⑤的前面，故答案选D。",
+                  "sequenceNumber": "12",
+                  "questionId": "e49bdb93-e9c4-49fc-8574-55e1c24257f3",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "12",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>①⑦⑥④②⑤③</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>③①⑤②⑦④⑥</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>①⑦②⑥③⑤④</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>③①⑦⑤②⑥④</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 12,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "3"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>将下列句子组成一段语意贯通的话，排序恰当的一项是(　　)</span></p><p><span>①这种梦境往往会被顽皮的鱼鹰搅破。</span></p><p><span>②忽然间鱼鹰变得异常机灵，抖着翅膀扑进水里去，山影一时都搅碎了。</span></p><p><span>③赶上天气晴朗，水面平得像玻璃，满江就会画着一片一片淡墨色的山影，模模糊糊的，使人恍惚沉进最恬静的梦境里去。</span></p><p><span>④这时渔翁站起身伸出竹篙，挑上鱼鹰，一捏它的长脖子，那鱼便被吐进竹篓里去。</span></p><p><span>⑤竹筏子的梢上停着几只鱼鹰，神气有点迟钝。</span></p><p><span>⑥一转眼，鱼鹰又浮出水面，长嘴里咬着条银色细鳞的鲢子鱼，咕嘟地吞下去。</span></p><p><span>⑦江面上不断漂着灵巧的小竹筏子，老渔翁戴着尖顶竹笠，安闲地倚着鱼篓抽烟。</span></p>",
+                  "batchNumber": "e49bdb93-e9c4-49fc-8574-55e1c24257f3"
+                },
+                {
+                  "solvingProcess": "本题考查辨识病句的能力。A项重复累赘，删去“的误区”；B项“与否”与“苛求”前后不照应；C项搭配不当，“走出”不应包括“未来发展的重要道路”。",
+                  "sequenceNumber": "13",
+                  "questionId": "87cb5941-207a-45b6-a9e4-b457ac0fabe8",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "13",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>尽管对事物的错误认知源于感情的亲疏，但公正的灵魂会时刻提醒你，让你警惕感情陷阱的误区。</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>环顾四周，对外语能力的强调已到了令人啼笑皆非的地步，外语考试五花八门，而语法的正确与否几乎变成了技术性苛求。</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>国际社会认为海洋资源的开发利用是能更好地帮助人类走出当前人口剧增、资源枯竭、环境恶化的困境和未来发展的重要道路。</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>国家发展改革委员会决定适时调整国债资金投向，加快禽流感防治设施建设，增强医疗机构的收治能力，有效遏制疫情向农村蔓延。</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 13,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "3"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各句中，没有语病的一句是(　　)",
+                  "batchNumber": "87cb5941-207a-45b6-a9e4-b457ac0fabe8"
+                },
+                {
+                  "solvingProcess": "A句式杂糅；C 转移话题，造成不合逻辑；D语义不明有歧义，是利欲熏心者的结果是可怕的 还是欺骗消费者的德行为的结果是可怕的。",
+                  "sequenceNumber": "14",
+                  "questionId": "1dda3102-410a-4447-9a3e-b8e90dc0ab42",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "14",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>古老的智慧、经典的知识尽管难以具有实际的功效，但它具有益人心智、怡人性情、改变气质、滋养人生的价值不可小视。</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>作为主要农产品技术法规、标准的集大成者，该数据库填补了国内空白，对扭转我国农产品出口所面临的不利局面具有重要意义。</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>阅读优秀的古典文学作品可以帮助我们了解古代人民的生活，但它们多是用文言写成的，所以比起白话文要难学一些。</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>奉劝那些利欲熏心者，莫要为了蝇头小利而弄虚作假，借助虚假广告蒙骗消费者，其结果是很可怕的。</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 14,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "1"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各句中，没有语病的一句是(　　)",
+                  "batchNumber": "1dda3102-410a-4447-9a3e-b8e90dc0ab42"
+                },
+                {
+                  "solvingProcess": "本题考查了现代汉语的字形。B项中“扑朔弥离”的正确写法是“扑朔迷离”；C项中“较勘”的正确写法是“校勘”；D项中“绵里藏真”的正确写法是“绵里藏针”。其他词语中没有错别字。",
+                  "sequenceNumber": "15",
+                  "questionId": "2aa16998-92b2-4da5-b4a3-b019c2272d66",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "15",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>攀缘 陌路 万马齐喑</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>嘉许 徒劳 扑朔弥离</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>收敛 较勘 大智若愚</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>附庸 拘泥 绵里藏真</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 15,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "0"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各组词语中没有错别字的一项是(　　)",
+                  "batchNumber": "2aa16998-92b2-4da5-b4a3-b019c2272d66"
+                },
+                {
+                  "solvingProcess": "本题考查了辨识病句的能力。A项中“越来越高”和“流动”不搭配，可改为“越来越频繁的流动”。",
+                  "sequenceNumber": "16",
+                  "questionId": "b2a6a2fb-43e0-4321-a6b0-9c2abbfc147b",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "16",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>士者国之宝，人才尤其是高端人才，各地都争相延聘，呈现出越来越高的流动。</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>这一报告显示，高等职业教育就业率持续走高，毕业生对经济发展的贡献颇大。</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>改善民生是个动态过程，随着社会保障水平的提高，老百姓的要求也越来越高。</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>以智能化为核心的又一次工业革命正席卷而来，改变着人类生活的方方面面。</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 16,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "0"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各句中，有语病的一项是(　　)",
+                  "batchNumber": "b2a6a2fb-43e0-4321-a6b0-9c2abbfc147b"
+                },
+                {
+                  "solvingProcess": "A项“积腋成裘”应是“集腋成裘”，“群贤必至”应是“群贤毕至”；B项“目光如聚”应是“目光如炬”；C项“常年累月”应是“长年累月”；D项“遗笑大方”应是“贻笑大方”，“弱不经风”应是“弱不禁风”，“气势凶凶”应是“气势汹汹”。",
+                  "sequenceNumber": "17",
+                  "questionId": "e2aabc98-545e-459f-97c8-2d914335f50d",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "17",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>积腋成裘 猝不及防 曲突徙薪 群贤必至</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>瓦釜雷鸣 歪风邪气 目光如聚 铤而走险</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>优柔寡断 源远流长 钟灵毓秀 常年累月</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>自立更生 遗笑大方 弱不经风 气势汹汹</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 17,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "0"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列各组词语中，有两个错别字的是(　　)",
+                  "batchNumber": "e2aabc98-545e-459f-97c8-2d914335f50d"
+                },
+                {
+                  "solvingProcess": "本题考查了正确选用词语的能力。“巧夺天工”指精巧的人工胜过天然，形容技艺极其精巧；“得天独厚”指独具特殊优越的条件，也指所处的环境特别好。“流行”指广泛传布，盛行；“保留”指保存不变，或指暂时留着不处理，或指留下、不拿出来。“捕捉”中的“捉”指使人或动物落入自己的手中；“发现”指经过研究、探索等，看到或找到前人没有看到或找到的事物或规律，或指发觉。题中点明是自然环境，故选“得天独厚”；各个岛屿虽然自然风景相似，但却各自保存着独特的文化传统，这里没有“广泛传布”的意思，故选“保留”；灵感是人在实践活动中突然产生的富有创造性的思路，这里用“捕捉”更合适。故选D。",
+                  "sequenceNumber": "18",
+                  "questionId": "f41f82d0-7a62-4c1a-bfa6-b1aa5bf5b51e",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "18",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>巧夺天工 流行 捕捉</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>巧夺天工 保留 发现</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>得天独厚 流行 发现</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>得天独厚 保留 捕捉</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 18,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "3"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>依次填入下列横线处的词语，恰当的一项是(　　)</span></p><p><span>这个群岛位于地中海西部一个____的自然环境之中，虽然岛屿之间自然风景相似，但都____着各自独特的文化传统。自十九世纪以来，众多的作家、画家和音乐家来这里____灵感，他们的艺术创作也给群岛带来了国际声誉。</span></p>",
+                  "batchNumber": "f41f82d0-7a62-4c1a-bfa6-b1aa5bf5b51e"
+                },
+                {
+                  "solvingProcess": "首先，从逻辑上先有“飞向天空”才会有“俯瞰”“看得清晰和真切”；其次，“有谁看这城市有它们看得清晰和真切呢？”与“在它们眼里，收进了多少秘密呢？”形成一个连问的语势。",
+                  "sequenceNumber": "19",
+                  "questionId": "41d702b9-cfa8-4326-ac2e-e42df4e9af08",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "19",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>它们是惟一的俯瞰这城市的浯物，有谁看这城市有它们看得清晰和真切呢？每天早晨，有多少鸽子从波涛连绵的屋顶上飞向天空！</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>每天早晨，有多少鸽子从波涛连绵的屋顶上飞向天空！它们是惟一的俯瞰这城市的活物，有谁看这城市有它们看得清晰和真切呢？</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>它们是惟一的俯瞰这城市的活物，每天早晨，有多少鸽子从波涛连绵的屋顶上飞向天空！有谁看这城市有它们看得清晰和真切呢？</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>每天早晨，有多少鸽子从波涛连绵的屋顶上飞向天空！有谁看这城市有它们看得清晰和真切呢？它们是惟一的俯瞰这城市的活物。</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 19,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "1"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "<p><span>下列各句与上下文衔接得最好的一句是(　　)</span></p><p><span>鸽子是这城市的精灵。____它们眼里，收进了多少秘密呢？</span></p>",
+                  "batchNumber": "41d702b9-cfa8-4326-ac2e-e42df4e9af08"
+                },
+                {
+                  "solvingProcess": "本题考查了辨识病句的能力。B句中“不可”应是“才行，才可以”一类的词语。",
+                  "sequenceNumber": "20",
+                  "questionId": "97dd3354-5729-4424-9291-ffcd1676f0d2",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "单选题",
+                  "difficultyDegree": 4,
+                  "usedsequence": "20",
+                  "answerArea": {
+                    "optionList": [
+                      {
+                        "id": "0",
+                        "content": "<span>电影《侏罗纪世界》公映前一周，制片方为影评人和有关专家组织过小范围试映，结果美言不多。</span>",
+                        "sequence": 0,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "1",
+                        "content": "<span>要改变目前教学内容繁、难、偏、重的状况，就必须切实转变思想观念，冲出课本和教学的误区不可。</span>",
+                        "sequence": 1,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "2",
+                        "content": "<span>科学家发现了大脑中能够控制恐惧的区域，这将有助于改进创伤后压抑症和焦虑症的治疗方法。</span>",
+                        "sequence": 2,
+                        "score": 0,
+                        "isInput": false
+                      },
+                      {
+                        "id": "3",
+                        "content": "<span>代表们从尚法守信、励学思进、务实求真等方面对如何更好地展现城市精神风貌的问题进行了讨论。</span>",
+                        "sequence": 3,
+                        "score": 0,
+                        "isInput": false
+                      }
+                    ],
+                    "reorder": false
+                  },
+                  "answerMode": "SingleSelection",
+                  "sequence": 20,
+                  "score": 3,
+                  "judgmentMode": 1,
+                  "answer": {
+                    "id": "1"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": "0,1,2,3",
+                  "stem": "下列句子有语病的一项是(　　)",
+                  "batchNumber": "97dd3354-5729-4424-9291-ffcd1676f0d2"
+                }
+              ],
+              "realEachScore": 3,
+              "level": 2,
+              "totalscore": "60",
+              "eachQuestionScore": "3",
+              "sequencenumber": "一",
+              "usedsequence": "一",
+              "isSameScore": true,
+              "parentId": "fe8473af-f1a5-49e4-990f-66c8a6783e1b",
+              "sequence": 1,
+              "totalquestion": 20,
+              "name": "单选题",
+              "comment": null,
+              "id": "1975ed06-a099-4dcd-bce8-565b82101adc"
+            },
+            {
+              "paperQuestionList": [
+                {
+                  "solvingProcess": "",
+                  "sequenceNumber": "21",
+                  "questionId": "05c06b9f-631c-45e6-9f23-c312923a488b",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "现代文阅读",
+                  "difficultyDegree": 3,
+                  "usedsequence": "1",
+                  "answerArea": null,
+                  "answerMode": "Composite",
+                  "sequence": 1,
+                  "score": 10,
+                  "judgmentMode": 2,
+                  "answer": null,
+                  "subqustionList": [
+                    {
+                      "solvingProcess": "",
+                      "sequence": 1,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "7b4980d9-78af-459b-bdd7-eb53950f5577",
+                      "answer": {
+                        "content": "<p><span>(1)有时威加四海到目空一切。</span></p><p><span>(2)有时流氓到扬言可与项羽分食其父的人肉羹。</span></p><p><span>(3)而是有益于自己身心健康。</span></p>"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "<p><span>根据语境，把括号内省去的句子补出来。</span></p><p><span>(1)</span></p><p><span>(2)</span></p><p><span>(3)</span></p>"
+                    },
+                    {
+                      "solvingProcess": "",
+                      "sequence": 2,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "4533da70-63f3-4605-b293-9f104c89b4fd",
+                      "answer": {
+                        "content": "生活在现实社会，你必须处理好社会关系，否则就有生存危机，而宽容就是处理好社会关系的法宝；追求和睦互利的生存状态，我们将会生活得更好。"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "通读全文，概括作者所揭示的“生存的秘密”的具体内容。"
+                    },
+                    {
+                      "solvingProcess": "",
+                      "sequence": 3,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "d984ae4c-8956-4b69-a296-64456e665ef3",
+                      "answer": {
+                        "idList": [
+                          "1",
+                          "2"
+                        ]
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "多选题",
+                      "answerArea": {
+                        "optionList": [
+                          {
+                            "id": "0",
+                            "content": "<span>从“最有意思”、“算是达到了‘大道无形’的境界”等文字，我们可以看出作者对刘邦是很欣赏的。</span>",
+                            "sequence": 0,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "1",
+                            "content": "<span>作者在探讨生存的秘密时，将话题扯到宗教上，而且充分地展开。在肯定了佛教的同时也否定了道教。</span>",
+                            "sequence": 1,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "2",
+                            "content": "<span>我们知道，著名学者房龙在上个世纪初就高扬“宽容”的大旗。但是，时过境迁，在如今市场经济的背景下，还竭力提倡宽容，就连作者也觉得是不合时宜的做法。</span>",
+                            "sequence": 2,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "3",
+                            "content": "<span>奥赛罗的悲剧发源于它的多义和嫉妒，麦克白的毁灭则是他沉醉于贪欲和野心的结果。莎士比亚以如椽之品，对我们寻求生存的秘密是很有益处的。</span>",
+                            "sequence": 3,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "4",
+                            "content": "<span>本文旁征博引，古今中外尽在视野之中，通篇充满辩证的哲学思考，给读者以启迪。</span>",
+                            "sequence": 4,
+                            "score": 0,
+                            "isInput": false
+                          }
+                        ],
+                        "reorder": false
+                      },
+                      "answerMode": "MultiSelection",
+                      "answerAreaStyle": "0,1,2,3,4",
+                      "stem": "下面是对全文的解说，选出不恰当的两项。（ ）"
+                    },
+                    {
+                      "solvingProcess": "",
+                      "sequence": 4,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "271c1b33-071a-4234-a8b5-eefe1e0421fb",
+                      "answer": {
+                        "content": "宽厚"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "作者认为少林的人比起武当最大的区别是什么？"
+                    }
+                  ],
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": null,
+                  "stem": "<p><span>生存的秘密</span></p><p><span>最近翻看一本新出的书，专门讲性格和命运的关系，倒是把历史上成功人物的好性格一一罗列了出来。我觉得最有意思的，是汉高祖刘邦的性格。在作者看来，刘邦的性格就像太极拳的招数，刚柔相济，阴阳变幻，说有都有，说无都无。这种性格让刘邦根据形势的需要，随时彰显某一方面的统帅面孔，使自己经常处于有利的地位。有时礼贤下士到唯唯诺诺，(1)；有时儒雅到彻夜倾谈安邦治国大计，(2)。我想，这大约就算是达到“大道无形”的境界了吧。</span></p><p><span>那是讲大人物的，一般草民学不像，学了也大体没用，搞不好，还被人认为疯疯癫癫的不正常。那么，对我们凡夫俗子，如何培养有益于安身立命的好性格呢？</span></p><p><span>我把话题先扯开一会儿。宗教不管搞得如何高妙，归根结底，是为了解决人的心理需要而产生的，它较多地反映出民族的精神取向。中国土生土长的宗教是道教。后来，佛教由印度东传，到隋唐之际，已经把道教冲得七零八落……</span></p><p><span>外来的佛学很快取代本土的道学，一般研究者，主要从统治阶级的政治需要方面进行解释。我不反对这种分析。我还想指出另外一个原因。佛教慈悲为怀、普渡众生的核心思想，与中华民族宽容平和的精神追求合拍，与俗世儒学的仁爱中庸也是互补的关系。至于道教，则相对勇猛威武了些(顺便说一句，道教的思想与老庄之学基本不相干)。写《西游记》的吴承恩，很明白其中的区别。大闹天宫的孙猴子被擒拿归案，代表道教权威的太上老君是将它放进八卦炉里烧了七七四十九天，非要毁尸灭迹不成；代表佛教的西方如来则是轻轻一翻巴掌，将猴哥压在五行山下，让他反省了五百年，在派个唐僧去超度他。金庸他们写武侠小说，也注意到其解的微妙区别，少林的人大体比较忠厚老实，武当里面则常常出现像靠武力独步天下的悲剧人物。至于武当的张三丰，当然也是宽厚长者的代表，但他从小与少林关系密切，有佛家根底，自然不足为奇。</span></p><p><span>我兜了个大圈子，回到本题上，对一般人而言，宽容随和的性格，是比较有益于在人世间逍遥的。莎士比亚的奥赛罗，如果对自己的爱人宽容些，就不会有来不及解释的天大误会，那场赢得千百万男女眼泪的悲剧，本来是可以避免的。麦克白的问题是野心勃勃，但按现代心理学的分析，在他成长过程中，在他少年时代，肯定有心理毛病，那症状必然是偏狭偏激，容不得旁人比他强，要把世界上好事独占了。</span></p><p><span>写到此处，我相信，有的读者在明白了我的立场后，要笑我迂腐了。眼下是市场经济，到处都是欺诈争斗，拼得像乌眼鸡似的，谁对谁宽容啊？我承认此话千真万确。不过，不妨去看看成功者的资料，特别是那些并非过眼云烟的成功者，政界、商界、文艺界、科技界，大大小小的成功人士，毕竟多数具备宽容大度的气质。反之，即使一代英才如东吴周郎，亏就亏在气量狭小，害的自己早早吐血而亡。</span></p><p><span>宽容，首先不是对他人方便，给别人好处，(3)。这个道理想通了，才宽容得起来。有人捐钱帮助穷人，旁人夸他乐善好施，他说是自己快乐，换得心如明镜清水。两者是一样的道理。人生在世，生老病死，生离死别，本来苦恼烦恼就多，若能求得在家里和社会上都快快乐乐，还有比这更重要的么？</span></p><p><span>11.在作者看来，“外来的佛学很快取代本土的道学”，原因何在？</span></p><p><span>11.答案：一是统治阶级的政治需要，二是佛教慈悲为怀、普渡众生的核心思想，与中华民族宽容平和的精神追求合拍，与俗世儒学的仁爱中庸也是互补的关系，而道教，则相对勇猛威武了些。</span></p>",
+                  "batchNumber": "05c06b9f-631c-45e6-9f23-c312923a488b"
+                },
+                {
+                  "solvingProcess": "",
+                  "sequenceNumber": "22",
+                  "questionId": "aa908b81-fdda-4687-83ef-d9ff9ca464ed",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "现代文阅读",
+                  "difficultyDegree": 3,
+                  "usedsequence": "2",
+                  "answerArea": null,
+                  "answerMode": "Composite",
+                  "sequence": 2,
+                  "score": 10,
+                  "judgmentMode": 2,
+                  "answer": null,
+                  "subqustionList": [
+                    {
+                      "solvingProcess": "",
+                      "sequence": 1,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "d5b4f8da-612b-4585-aacd-1314bcd28727",
+                      "answer": {
+                        "content": "处于青春期的“我”，性格孤僻，渴望与远方交流；有点自卑的“我”，秘密写信，不知能否成功，不希望周围人知道。(意思对即可)"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "为什么写信成为14岁少年“我”的秘密？试作简要分析。(6分)"
+                    },
+                    {
+                      "solvingProcess": "",
+                      "sequence": 2,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "8fd74f22-c4a1-4e0d-a24a-34bcd8496a40",
+                      "answer": {
+                        "content": "听收音机时的环境背景：夏夜的星光下，萤火虫飞舞。丝瓜花香，凉风习习。念信时的环境背景：煤油灯，蜘蛛网，蛐蛐的叫声。作用：前者自然而浪漫的情境衬托了“我”听收音机时的惬意；后者写简陋的居住环境，衬托了“我”对创作(写信、念信与修改)的痴迷。(意思对即可)"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "“我”听收音机和念自己写的信，分别是在怎样的环境下进行的？这两种环境描写，分别起到了什么作用？(6分)"
+                    },
+                    {
+                      "solvingProcess": "",
+                      "sequence": 3,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "68996946-415e-4573-94ad-5278f5bb9b0e",
+                      "answer": {
+                        "content": "一是“我”内心因为成功的喜悦而不平静；二是乡邻的躁动和“收信与回信”让“我”不能平静；三是因为写作的成功，开启了“我”丰富多彩的人生历程。(意思对即可)"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "作者给电台的信播出后，他说：“从此，我的世界再也没有平静过。”如何理解这句话的含意？(6分)"
+                    },
+                    {
+                      "solvingProcess": "",
+                      "sequence": 4,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "f17c20c9-82bb-46ae-ab64-e2eef2486a3b",
+                      "answer": {
+                        "content": "答案：第一问：情感血液，恒久力量，微量元素。第二问：情感血液，从写作的情感培养方面来说；恒久力量，从写作的耐力方面来说；微量元素，从写作的素质方面来说。(意思对即可)"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "文章最后一段，作者说“最初的写信时光”为他后来的写作提供了怎样的帮助？是分别从什么角度来说的？(7分)"
+                    }
+                  ],
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": null,
+                  "stem": "<p><span>在我的记忆中，写信是14岁那年开始的秘密。</span></p><p><span>那个时候，我的身体与心绪正在发生微妙变化。闭塞而又贫穷的小山村让我找不到人交谈，和班上的同学、代课老师，也没有共同语言。我在寂寞中渴望与远方交流。可远方太远，我怎么也够不着，除了止不住的无边想象，唯一能接触的就是收音机里播出的“文艺听众之家”节目。星星与萤火虫出没的夏夜，我时常躺在屋外草地的凉席上，头枕微风，微闭双眼，闻着丝瓜藤里的花香，一直听到入梦，最后空气中只剩下收音机哗哗啦啦的电流声。第二天，受到父亲严厉责备，才知他又一次把我从地上扛回了家。在那档定期播出的文艺节目里，我听到太多来自远方的心声。我发现在遥远的地方，也有像我们这样的小山村，也有如我一般寂寞的人。最重要的是，我知道了这个世界还可以通过写信的方式，来表达一个人的快乐与忧愁。我羡慕主持人念到的那些有故事的写信者，我认真地记下了他们的通信地址。</span></p><p><span>我迷恋上了聆听别人的故事，迫切希望主持人念到我的信，让远方更多的人听到我的心声。可写信者太多太多，每期的节目里，最终盼来的只有失望。我想一定是我的字不够好，我的故事没有别人的精彩，我的表达还没有得到主持人的认可，也难以打动听众。总之，我的水平比那些被念到的写信者低。</span></p><p><span>有点自卑，但从未放弃自己。我下决心要写得更好，便把自己锁在屋子里，一次又一次在纸上诉说心中的故事。除了写给电台的节目组，我还写给那些通过电波感动我的人。他们有的是常年拖着军需物资在川藏线上奔跑的汽车兵，有的是在山沟沟里支教的小学教师，有的是小镇上输液器厂的女工，还有在监狱里服刑的年老的犯人。从铺开信笺，到酝酿情感，再到将字落入方格里。</span></p><p><span>每一封信写好，我都会反复地念上几遍，模仿主持人在优美的背景音乐里念。只是我念的背景，是一盏沉默的煤油灯和屋角上硕大无朋的蜘蛛网，背景音乐则是窗前蛐蛐儿的不停叫嚷声。只要感觉哪些地方念着不舒服，我便撕了重写，然后检查自己的表达是否妥当，猜想对方读了我的信是怎样一种心情。</span></p><p><span>我对写信的认真，远远超过老师在课堂上布置的作文。因为我知道，当信投进邮筒的那一刻，我就把心交给了远方，生怕读信者嫌弃我不够水平，没有文采，甚至认为我表达心绪太幼稚而拒绝给我回信。</span></p><p><span>我就在这样的表达与发现中开始了作文，我就在这样的等待与徘徊中靠近了写作。每当收到一封回信，我就觉得是自己写作的成功，是自己的信打动了别人。越来越多的回信让我更加自信。</span></p><p><span>直到有一天，我的信在电台里播出，从此，我的世界再也没有平静过。当主持人口中念出“接下来，我们欣赏四川省自贡市荣县金台乡虎榜村十二组凌仕江寄来的信，标题叫《乡村男孩》……”</span></p><p><span>当背景音乐响起，主持人圆润而磁性的声音开始念出我的心声。我捧着咚咚乱跳的心儿，一个人跑进屋里，把自己偷偷藏起来。我怎么也控制不住眼泪掉下来。</span></p><p><span>山村里喜欢听广播节目的人，都听到了自己耳熟能详的生活与地名，他们纷纷跑来，大声地问父亲，是你家小路写的吗？刚才你听见了吗？真的是他写的吗？太不简单了!父亲懒得看他们一眼，只顾干自己的活，全然不知道发生了什么事情。接着，来自五湖四海的信件，朝我铺天盖地卷来。他们告诉我，被我的信感动了。收信与回信，成了我乐此不疲的“作业”。</span></p><p><span>每当听见邮递员在山坡上喊我名字的时候，我就会突然感觉自己再也不寂寞了……原来世界上还有那么多人等待倾听我的故事。</span></p><p><span>历经文字伴随的岁月长旅之后，蓦然回首，才发现就是最初的写信时光为我的写作注入了丰富的情感血液，助长了“文学马拉松”的恒久力量，培育了写作前期的微量元素。我的写作是从写信开始的。这看似黑白电影里的一节生活小插曲，却揭示了一个朴素的真理：写作，从内心的需要出发，你总可以找到共鸣!</span></p>",
+                  "batchNumber": "aa908b81-fdda-4687-83ef-d9ff9ca464ed"
+                }
+              ],
+              "realEachScore": 10,
+              "level": 2,
+              "totalscore": "20",
+              "eachQuestionScore": "10",
+              "sequencenumber": "二",
+              "usedsequence": "二",
+              "isSameScore": true,
+              "parentId": "fe8473af-f1a5-49e4-990f-66c8a6783e1b",
+              "sequence": 2,
+              "totalquestion": 2,
+              "name": "现代文阅读",
+              "comment": "",
+              "id": "efe6673f-fefe-449f-915d-b536ef88fed7"
+            },
+            {
+              "paperQuestionList": [
+                {
+                  "solvingProcess": "",
+                  "sequenceNumber": "23",
+                  "questionId": "565d771a-c6bd-400c-a652-14f001e1e41a",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "文言文阅读",
+                  "difficultyDegree": 3,
+                  "usedsequence": "1",
+                  "answerArea": null,
+                  "answerMode": "Composite",
+                  "sequence": 1,
+                  "score": 10,
+                  "judgmentMode": 2,
+                  "answer": null,
+                  "subqustionList": [
+                    {
+                      "solvingProcess": "",
+                      "sequence": 1,
+                      "sequenceNumber": null,
+                      "score": 3.3,
+                      "questionId": "4a9e474f-e304-4225-997e-a6bf12884c9e",
+                      "answer": {
+                        "content": "现在齐国用重金高价收买对我们有害的东西，这是楚国的福分。"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "用现代汉语写出文中画线文字的大意。(5分)"
+                    },
+                    {
+                      "solvingProcess": "",
+                      "sequence": 2,
+                      "sequenceNumber": null,
+                      "score": 3.3,
+                      "questionId": "46b2feb4-340e-4742-b3dc-2b5f85342463",
+                      "answer": {
+                        "content": "楚王认为金钱是“人之所重也，国之所以存，明主之所以赏有功”的宝贝。"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "楚王对金钱的看法是怎样的？(5分)"
+                    },
+                    {
+                      "solvingProcess": "",
+                      "sequence": 3,
+                      "sequenceNumber": null,
+                      "score": 3.4,
+                      "questionId": "854428e0-0387-4319-943e-8922da24334f",
+                      "answer": {
+                        "content": "贵买楚鹿，诱使楚国放弃了农业。"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "解答题（简答题）",
+                      "answerArea": null,
+                      "answerMode": "EssayQuestion",
+                      "answerAreaStyle": null,
+                      "stem": "管子“战斗之道”的关键是什么？(6分)"
+                    }
+                  ],
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": null,
+                  "stem": "<p><span>桓公问于管子日：“楚者，山东之强国也，其人民习战斗之道。举兵伐之，恐力不能过。</span></p><p><span>兵弊于楚，功不成于周，为之奈何？”管子对日：“即以战斗之道与之矣。”公日：“何谓也？”</span></p><p><span>管子对日：“公贵买其鹿。”桓公即为百里之城，使人之楚买生鹿。楚生鹿当一而八万。管子即令桓公与民通轻重①，藏谷什之六②。令左司马伯公将白徒③而铸钱于庄山。令中大夫王邑载钱二千万，求生鹿于楚。楚王闻之，告其相日：“彼金钱，人之所重也，国之所以存，明王之所以赏有功。禽兽者群害也，明王之所弃逐也。今齐以其重宝贵买吾群害，则是楚之福也，天且以齐私楚也。子告吾民急求生鹿，以尽齐之宝。”楚民即释其耕农而田鹿。管子告楚之贾人日：“子为我致生鹿二十，赐子金百斤。什至而金千斤也。”则是楚不赋于民而财用足也。</span></p><p><span>楚之男子居外，女子居涂。隰朋教民藏粟五倍。楚以生鹿藏钱五倍。管子日：“楚可下矣。”公日：“奈何？”管子对日：“楚钱五倍，其君且自得而修谷。钱五倍，是楚强也。”桓公日：“诺。”因令人闭关，不与楚通使。楚王果自得而修谷。谷不可三月而得也，楚籴四百。齐因令人载粟处芊④之南，楚人降齐者十分之四。三年而楚服。</span></p><p><span>(选自《管子·轻重戊》)</span></p><p><span>（注）①通轻重：这里指做买卖。②什之六：十分之六。③白徒：民佚。④芊：这里指齐楚交界的地方</span></p>",
+                  "batchNumber": "565d771a-c6bd-400c-a652-14f001e1e41a"
+                }
+              ],
+              "realEachScore": 10,
+              "level": 2,
+              "totalscore": "10",
+              "eachQuestionScore": "10",
+              "sequencenumber": "三",
+              "usedsequence": "三",
+              "isSameScore": true,
+              "parentId": "fe8473af-f1a5-49e4-990f-66c8a6783e1b",
+              "sequence": 3,
+              "totalquestion": 1,
+              "name": "文言文阅读",
+              "comment": "",
+              "id": "e3b4b760-235d-4877-bd7f-f264ad2fa94c"
+            },
+            {
+              "paperQuestionList": [
+                {
+                  "solvingProcess": "",
+                  "sequenceNumber": "24",
+                  "questionId": "5fa2e347-4ec2-4018-a81e-faa1e5da2103",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "阅读理解",
+                  "difficultyDegree": 3,
+                  "usedsequence": "1",
+                  "answerArea": null,
+                  "answerMode": "Composite",
+                  "sequence": 1,
+                  "score": 10,
+                  "judgmentMode": 2,
+                  "answer": null,
+                  "subqustionList": [
+                    {
+                      "solvingProcess": "A原文第二段说“还是没有检查出一氧化碳在人体中的准确作用”；B“体内会自然地产生少量的一氧化碳”；D偷换概念，“有助于防止”不等于“有效防止”。",
+                      "sequence": 1,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "efd585b6-4e7f-41cb-8921-fb8f3acf6a0b",
+                      "answer": {
+                        "id": "2"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "单选题",
+                      "answerArea": {
+                        "optionList": [
+                          {
+                            "id": "0",
+                            "content": "<span>一氧化碳在人体中的准确作用，是协助-氧化氮管理人体的内部器官。</span>",
+                            "sequence": 0,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "1",
+                            "content": "<span>身体组织在受毒素、紫外线辐射、激素和药物等侵害时，体内需要一定的一氧化碳。</span>",
+                            "sequence": 1,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "2",
+                            "content": "<span>科学实验表明，一氧化碳对肺移植手术大有帮助。</span>",
+                            "sequence": 2,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "3",
+                            "content": "<span>一氧化碳虽然是-种有毒气体，但它可以有效防止器官移植手术中的排斥反应。</span>",
+                            "sequence": 3,
+                            "score": 0,
+                            "isInput": false
+                          }
+                        ],
+                        "reorder": false
+                      },
+                      "answerMode": "SingleSelection",
+                      "answerAreaStyle": "0,1,2,3",
+                      "stem": "下列对一氧化碳医学作用的解释，最准确的一组是（ ）"
+                    },
+                    {
+                      "solvingProcess": "这是一氧化碳危害人体的情况。",
+                      "sequence": 2,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "d857b51f-f228-41ec-929d-d872e34b5c8c",
+                      "answer": {
+                        "id": "1"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "单选题",
+                      "answerArea": {
+                        "optionList": [
+                          {
+                            "id": "0",
+                            "content": "<span>让改变过基因的老鼠呼吸微量的一氧化碳后进行模拟的肺移植手术，只有一半老鼠死于非命。</span>",
+                            "sequence": 0,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "1",
+                            "content": "<span>一氧化碳能紧紧结合红细胞中的血红蛋白，形成羧化血红蛋白。</span>",
+                            "sequence": 1,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "2",
+                            "content": "<span>将老鼠置于含微量一氧化碳的空气中，在一星期之内可以幸存。</span>",
+                            "sequence": 2,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "3",
+                            "content": "<span>对缺少制造HO-1基因的老鼠进行模拟的肺移植手术，都死了产生在肺叶中的血块。</span>",
+                            "sequence": 3,
+                            "score": 0,
+                            "isInput": false
+                          }
+                        ],
+                        "reorder": false
+                      },
+                      "answerMode": "SingleSelection",
+                      "answerAreaStyle": "0,1,2,3",
+                      "stem": "下列不能说明一氧化碳对人体有益的一项是（ ）"
+                    },
+                    {
+                      "solvingProcess": "这是乔和贝奇研究后得出的看法，并非一氧化碳可以救命的原因。",
+                      "sequence": 3,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "6cb3761f-0b43-4635-915f-aeca7b072c73",
+                      "answer": {
+                        "id": "2"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "单选题",
+                      "answerArea": {
+                        "optionList": [
+                          {
+                            "id": "0",
+                            "content": "<span>一氧化碳对大肠的收缩和胃的排空有帮助作用。</span>",
+                            "sequence": 0,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "1",
+                            "content": "<span>吸入动物体内的微量一氧化碳可以完成HO-1所能完成的任务。</span>",
+                            "sequence": 1,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "2",
+                            "content": "<span>一氧化碳疗法是紧急情况下最好的方法，医药界不应该拒绝它的治疗潜力。</span>",
+                            "sequence": 2,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "3",
+                            "content": "<span>人体在及时对抗相应的受伤的感染时会自然地产生少量的一氧化碳。</span>",
+                            "sequence": 3,
+                            "score": 0,
+                            "isInput": false
+                          }
+                        ],
+                        "reorder": false
+                      },
+                      "answerMode": "SingleSelection",
+                      "answerAreaStyle": "0,1,2,3",
+                      "stem": "下列对一氧化碳可以救命的原因表述不正确的一项是（ ）"
+                    },
+                    {
+                      "solvingProcess": "A从第三段的内容来看，危害是明显的；B原文结尾说“取得了一定的效果”；C从最后一段看，希望将其“引入到肺移植手术中”就有必要进行评估。",
+                      "sequence": 4,
+                      "sequenceNumber": null,
+                      "score": 2.5,
+                      "questionId": "86e4180d-9ad8-4166-bace-e26704d0da3d",
+                      "answer": {
+                        "id": "3"
+                      },
+                      "answerRecord": {
+                        "correct": null,
+                        "answerScore": null,
+                        "content": null
+                      },
+                      "questiontypename": "单选题",
+                      "answerArea": {
+                        "optionList": [
+                          {
+                            "id": "0",
+                            "content": "<span>一氧化碳如果使用不当，对人类的危害一般不明显。</span>",
+                            "sequence": 0,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "1",
+                            "content": "<span>美国一些著名的医生把一氧化碳用于临床手术，取得了特别理想的效果。</span>",
+                            "sequence": 1,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "2",
+                            "content": "<span>一氧化碳在人类器官移植手术中作用明显，不再需要专门的机构对其进行评估。</span>",
+                            "sequence": 2,
+                            "score": 0,
+                            "isInput": false
+                          },
+                          {
+                            "id": "3",
+                            "content": "<span>科学家们相信，不久的将来使用一氧化碳有可能提高人类肺移植手术的成功率。</span>",
+                            "sequence": 3,
+                            "score": 0,
+                            "isInput": false
+                          }
+                        ],
+                        "reorder": false
+                      },
+                      "answerMode": "SingleSelection",
+                      "answerAreaStyle": "0,1,2,3",
+                      "stem": "根据原文所给的信息，以下推断正确的一项是（ ）"
+                    }
+                  ],
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": null,
+                  "stem": "<p><span>可以救命的一氧化碳</span></p><p><span>上世界60年代，人们就知道身体组织受毒素、紫外线辐射、激素和药物等侵害时，血红素加氧酶-1(简称HO-1)会及时对抗相应的受伤和感染，此时体内会自然地产生少量的一氧化碳。不过，当时人们都认为一氧化碳是组织代谢的副产品。</span></p><p><span>然而，美国科学家所罗门。辛德在1993年提出，一氧化碳在人体中扮演了一个有意义的角色。它有协助一氧化氮管理人体内部器官的功能，例如大肠的收缩、胃的排空等。但是，研究人员做了很多的努力之后，还是没有检查出一氧化碳在人体中的准确作用。</span></p><p><span>由于一氧化碳对人体有益，一些科学家想把它用于临床治疗。然而，一氧化碳是有毒气体，使用稍有不当，就会对人类造成危害。一氧化碳能紧紧结合红细胞中的血红蛋白，形成羧化血红蛋白，使氧气无法载运到全身。当人体内20%左右的血红蛋白转变成羧化血红蛋白时，就会出现恶心、呕吐和晕倒的情况；当人体内40%左右的血红蛋白转变成羧化血红蛋白时，就会夺人性命。因此，有科学家反对把一氧化碳引入对人类的临床治疗。但美国的奥古斯丁。乔和弗里茨。贝奇称，医药界不该这么快拒绝一氧化碳的治疗潜力，一氧化碳疗法是紧急情况下最好的方法。</span></p><p><span>2001年上半年，乔和贝奇领导的研究小组指出，患者吸入微量一氧化碳有助于防止器官的排斥反应。他们在进行老鼠心脏移植时，用一种叫“卟啉”的化学药品将HO-1封闭，一星期内老鼠有排斥移植的反应产生。但如果将老鼠置于含微量一氧化碳的空气中，则可以幸存。也就是说，吸入动物体内的微量一氧化碳可以完成HO-1所能完成的任务。这个实验也说明，20世纪60年代人们在研究HO-1时发现的一氧化碳不是代谢废物，而是在HO-1的作用下，人体为生理防御反应所产生的气体。</span></p><p><span>2001年年底，美国的大卫。平斯基的实验表明，一氧化碳对肺移植手术也大有帮助。平斯基改变了一些老鼠的遗传特性，使它们缺少制造HO-1的基因，然后让它们和正常的老鼠一起进行模拟的肺移植手术。平斯基用夹子截断供应到老鼠左肺的血流，一小时后让它们重新恢复流动。结果正常老鼠的生存率为90%，而所有改变过基因的老鼠皆死于产生在肺中的血块。在进一步的实验中，当平斯基给改变过基因的老鼠呼吸微量的一氧化碳后，只有一半老鼠死于非命。目前，每年有数千人进行肺移植手术，失败率为30%，比其他器官移植的失败率要高，比如，肾移植的失败率只有10%。因此，医药学家希望把一氧化碳的治疗作用引入到肺移植手术中。目前也有一些医生把一氧化碳用于临床手术中，取得了一定效果。</span></p>",
+                  "batchNumber": "5fa2e347-4ec2-4018-a81e-faa1e5da2103"
+                }
+              ],
+              "realEachScore": 10,
+              "level": 2,
+              "totalscore": "10",
+              "eachQuestionScore": "10",
+              "sequencenumber": "四",
+              "usedsequence": "四",
+              "isSameScore": true,
+              "parentId": "fe8473af-f1a5-49e4-990f-66c8a6783e1b",
+              "sequence": 4,
+              "totalquestion": 1,
+              "name": "阅读理解",
+              "comment": "",
+              "id": "7c200381-1d31-4335-be77-3a38ff81e0fb"
+            },
+            {
+              "paperQuestionList": [
+                {
+                  "solvingProcess": "<p><span>作文评分说明：</span></p><p><span>作文评分量表</span></p><p><span>【一等】内容：中心突出，构思精巧，内容充实（20分~17分）结构：严谨，自然（20分~17分）语言：简明，流畅，有文采（20分~17分）【二等】内容：中心明确，内容具体（16分~12分）结构：清晰，完整（16分~12分）语言：贴切，流畅（16分~12分）【三等】内容：中心较明确，内容较具体（11分~8分）结构：基本完整，比较有条理（11分~8分）语言：通畅，有少量语病（11分~8分）【四等】内容：中心不够明确，内容不够具体（7分~4分）结构：不完整，条理不清楚（7分~4分）语言：基本通畅，语病较多（7分~4分）【五等】内容：中心不明确，内容空洞（3分~1分）结构：结构混乱（3分~1分）语言：语言不通（3分~1分）</span></p><p><span>说明：</span></p><p><span>①评分时依据上表分项分等给分。</span></p><p><span>②文不对题或文理不通的文章不分项给分，给p～6分的综合分。</span></p><p><span>③内容得分为四等的文章，其语言、结构均不能给一等的分数；内容得分为五等的文章，其语言、结构均不能给二等以上的分数。</span></p><p><span>④字数不足600的，每少30字扣p分；字迹潦草、有错别字、有标点错误的，酌情扣p～5分。</span></p><p><span>⑤内容有严重问题的，提交阅卷领导小组处理。</span></p>",
+                  "sequenceNumber": "25",
+                  "questionId": "943b0a34-d7c6-4349-9859-146ba26db034",
+                  "answerRecord": {
+                    "correct": null,
+                    "answerScore": null,
+                    "content": null
+                  },
+                  "questiontypename": "作文题",
+                  "difficultyDegree": 3,
+                  "usedsequence": "1",
+                  "answerArea": null,
+                  "answerMode": "EssayQuestion",
+                  "sequence": 1,
+                  "score": 50,
+                  "judgmentMode": 2,
+                  "answer": {
+                    "content": "略"
+                  },
+                  "subqustionList": null,
+                  "category": [
+                    {
+                      "code": "00003001",
+                      "name": "语文"
+                    }
+                  ],
+                  "answerAreaStyle": null,
+                  "stem": "孔子说：“学而不思则罔，思而不学则殆。”请结合自己的学习体会或经历，以“学与思”为话题，写一篇不少于600字的文章，题目自拟，文体不限(诗歌除外)。",
+                  "batchNumber": "943b0a34-d7c6-4349-9859-146ba26db034"
+                }
+              ],
+              "realEachScore": 50,
+              "level": 2,
+              "totalscore": "50",
+              "eachQuestionScore": "50",
+              "sequencenumber": "五",
+              "usedsequence": "五",
+              "isSameScore": true,
+              "parentId": "fe8473af-f1a5-49e4-990f-66c8a6783e1b",
+              "sequence": 5,
+              "totalquestion": 1,
+              "name": "作文题",
+              "comment": null,
+              "id": "541640e6-8e55-441d-8dcb-4db30364d382"
+            }
+          ],
+          "number": "1910101457231570690814587",
+          "score": 150,
+          "name": "成考语文模拟试卷（2）",
+          "questionCategoryId": "2",
+          "showQuestionCount": true,
+          "lastSubmitQuestionTime": 0,
+          "comprehensive": 0,
+          "usedCount": 2
+        },
+        "minimumCommitTime": 0,
+        "useTime": 2857320,
+        "tempSaveAnswerTime": 10,
+        "timeLimitEnabled": true,
+        "startTime": "2019-10-10 17:54:56",
+        "takePhotoAutomaticSubmitTime": 0,
+        "paperOrder": 0,
+        "closePageAfterSubmit": false,
+        "tenant": "chengkao",
+        "tempSaveAnswer": false,
+        "viewStructure": true,
+        "tempSaveAnswerExpire": 24,
+        "detection": "false",
+        "resourcePackageId": null,
+        "startPaperResponse": false,
+        "stayInPage": "false",
+        "iframeJs": "http://218.25.139.161:10038/venus/resources/venus/js/app/iframe.js",
+        "currentStatus": "正在作答",
+        "isEntranceExams": false,
+        "needCheckCode": false,
+        "arrangementName": "成考语文模拟试卷（2）",
+        "paperLayoutMode": 0,
+        "userFaceImageUrl": null,
+        "answerPaperRecordId": "2ef853be-da4d-4fca-b5c3-690a9d48ab0b",
+        "banCopy": false,
+        "delayPapersAutoGradePolicy": false,
+        "iframeHtml": "http://218.25.139.161:10038/venus/resources/venus/js/app/iframe.html",
+        "takePhotoInMinimumCommitTime": 0,
+        "paperTime": 120
+      },
+      "error": null,
+      "status": 1
+    }
+  }

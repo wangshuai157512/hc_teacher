@@ -1,0 +1,14 @@
+<view class="_div data-v-332e82a8 topicListBox">
+    <view class="_ul data-v-332e82a8 topicList" wx:if="{{topicList && topicList.length > 0}}">
+      <view class="_li data-v-332e82a8 topicItem" wx:key="index" key="index" wx:for="{{topicList}}" wx:for-index="index" wx:for-item="item" wx:if="{{index < topicList.length-2}}">
+        <view class="_div data-v-332e82a8 topic-title">
+          <view class="_p data-v-332e82a8 color-2e3 f-16 f-b">{{item.papername}}</view>
+        </view>
+        <view class="_div data-v-332e82a8 topic-introduction">
+          <view class="_div data-v-332e82a8 topic-introduction-text"><label class="_span data-v-332e82a8 color-999 f-13 mr18">难度：<label class="_span data-v-332e82a8 difficulty-text f-12">{{difficultyList[item.difficultyDegree]}}</label></label><label class="_span data-v-332e82a8 color-999 f-13">考试时间：<label class="_span data-v-332e82a8 difficulty-text f012">{{item.papertime}}分钟</label></label></view>
+          <view class="_div data-v-332e82a8 start-text f-14 color-fff bgc-308" bindtap="handleProxy" data-id="{{item.id}}">练习</view>
+        </view>
+      </view>
+    </view>
+    <view wx:else class="_div data-v-332e82a8 not-course"> 暂无试卷 </view>
+  </view>

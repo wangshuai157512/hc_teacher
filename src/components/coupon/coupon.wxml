@@ -1,0 +1,37 @@
+<view
+     class="coupon-box"
+>
+    <view class="coupon-item mb12">
+        <view class="coupon-content  {{['bgc-' + bgc]}}">
+            <view class="coupon-price" wx:if="{{system !='ios'}}"><label class="f-20 color-fff ">￥</label> <label class="f-34 color-fff f-b f-a">{{price}}</label></view>
+            <view class="course-coupon">
+                <view class="course-name pl12">
+                    <view class="f-15 color-fff">{{courseName}}</view>
+                    <view class="f-11 color-fff mr4 expirationTime mt5">{{expirationTime}}</view>
+                </view>
+            </view>
+            <view class="use-coupon f-13 color-fff" wx:if="{{bgc!='default'}}" bindtap="goPay" data-eventid="{{'0'}}" data-comkey="{{$k}}">去使用</view>
+            <image src="../../public/images/coupon-b.png" class="coupon-bgc" wx:if="{{bgc=='blue'}}"></image>
+            <image src="../../public/images/coupon-g.png" class="coupon-bgc" wx:elif="{{bgc=='green'}}"></image>
+            <image src="../../public/images/coupon-o.png" class="coupon-bgc" wx:elif="{{bgc=='orange'}}"></image>
+            <image src="../../public/images/coupon-lb.png" class="coupon-bgc" wx:elif="{{bgc=='lightblue'}}"></image>
+            <image src="../../public/images/coupon-default.png" class="coupon-bgc" wx:else></image>
+        </view>
+        <view class="use-rules bgc-fff {{!open?'coupon-shadow':''}}">
+            <view class="use-rules-text plr15" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"><label class="f-11 color-667 mr4">使用规则</label>
+                <image src="{{open?'../../public/images/arrow-up.png':'../../public/images/arrow-b.png'}}" class="arrow"></image>
+            </view>
+        </view>
+        <view class="use-rules-box bgc-fff {{open?'rules-coupon':''}}" wx:if="{{open}}">
+            <view class=" use-rules-content pt10 plr10 pb20">
+                <view class="f-12 color-606">1.此优惠券在购买高频考点精讲课时可用，每次使用1张。</view>
+                <view class="f-12 color-606">2.首次登录小程序时领取，有效期7天，逾期作废。</view>
+                <view class="f-12 color-606">3.仅限在教师资格精品课小程序内使用。</view>
+            </view>
+        </view>
+        <view class="_div data-v-ba8a1f8c bgc-img">
+            <image src="../../public/images/use-coupon-icon.png" wx:if="{{state===1}}"></image>
+            <image src="../../public/images/guoqi-coupon-icon.png" wx:if="{{state===2}}"></image>
+        </view>
+    </view>
+</view>

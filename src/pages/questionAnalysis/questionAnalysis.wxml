@@ -1,0 +1,147 @@
+<view class="_div data-v-461b085f answerContainer">
+    <view class="_div data-v-461b085f question-view">
+      <swiper duration="200" current="{{currentTab}}" style="height: 100%;" bindchange="onChange" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_swiper data-v-461b085f">
+        <block wx:key="packIndex" key="packIndex" wx:for="{{questionList}}" wx:for-index="packIndex" wx:for-item="packItem">
+          <swiper-item wx:key="index" key="index" class="_swiper-item data-v-461b085f swiper-item__" wx:for="{{packItem.list}}" wx:for-index="index" wx:for-item="item">
+            <scroll-view scroll-y="true" wx:if="{{currentTab <= item.swiperId+2 && item.swiperId-2<=currentTab}}" class="_scroll-view data-v-461b085f" style=" {{('height:' + (item.answerMode === 'Composite' ? '' : '100%') + ';')}}">
+              <view class="_div data-v-461b085f {{[[item.answerMode === 'Composite' ? 'answer-wrap' : '']]}}">
+                <scroll-view scroll-y="true" class="_scroll-view data-v-461b085f {{[item.answerMode === 'Composite' ? 'title-scroll-view' : '']}}" style=" {{(  'height:' +  (item.answerMode === 'Composite' ? scrollHeight + 'px' : '') +  ';')}}">
+                  <view class="_div data-v-461b085f question-title-box title-wrap">
+                    <view class="_div data-v-461b085f question-header-box">
+                      <view class="_div data-v-461b085f question-header">
+                        <view class="_div data-v-461b085f question-title">{{item.questiontypename}}</view>
+                        <view class="_p data-v-461b085f question-length"><label class="_span data-v-461b085f question-index">{{index+1}}</label> <label class="_span data-v-461b085f question-count">/{{packItem.list.length}}</label></view>
+                      </view>
+                    </view> <choiceSingle
+                        wx:if="{{item.answerMode==='SingleSelection' && item.answerArea.optionList}}"
+                        title="{{item.stem}}"
+                        options="{{item.answerArea.optionList}}"
+                        topicListIndex="{{index}}"
+                        read-only="true"
+                        state="{{item.selectState}}"
+                        select-id="{{item.selectId}}"
+                        is-math="{{isMath}}"
+                      ></choiceSingle>
+                    <view wx:else class="_div data-v-461b085f questionItem-title">
+                      <wxparser rich-text="{{item.stem}}" wx:if="true" class="_parser data-v-461b085f"></wxparser>
+                      <rich-text wx:else nodes="{{item.stem}}" class="_view data-v-461b085f parser-text-read-title"></rich-text>
+                    </view>
+                  </view>
+                </scroll-view>
+                <view class="_div data-v-461b085f analysis-scroll-view analysis-composite-bgc" style=" {{(  'height:' +  (item.answerMode === 'Composite' ? titleScollViewHeight + 'px' : '') +  ';')}}">
+                  <view class="_div data-v-461b085f single-analysis" wx:if="{{item.answerMode !== 'Composite'}}">
+                    <view class="_div data-v-461b085f answer-box answer-answer-block">
+                      <view wx:if="{{item.answerMode==='SingleSelection'}}" class="_div data-v-461b085f">
+                        <view class="_p data-v-461b085f detail-item__title">答案</view> <label class="_span data-v-461b085f answer-text">正确答案</label> <label class="_span data-v-461b085f yes-text">{{alphabet[item.answer.id]}}</label>
+                        <block wx:if="{{item.appraisal !== 'correct'}}"><label class="_span data-v-461b085f answer-text2">您的答案</label>
+                          <sapn class="_sapn data-v-461b085f no-text" wx:if="{{item.selectId}}">{{alphabet[item.selectId]}}</sapn><label wx:else class="_span data-v-461b085f not-answer">未作答</label>
+                        </block>
+                        <block wx:else><label class="_span data-v-461b085f not-answer">回答正确</label></block>
+                      </view>
+                      <view wx:elif="{{item.answerMode==='EssayQuestion'}}" class="_div data-v-461b085f">
+                        <view class="_p data-v-461b085f detail-item__title">答案</view>
+                        <parser html="{{item.answer.content?item.answer.content:'暂无答案'}}" wx:if="{{isMath}}" class="_parser data-v-461b085f"></parser>
+                        <rich-text wx:else nodes="{{item.answer.content?item.answer.content:'暂无答案'}}" class="_view data-v-461b085f parser-text-jiexi"></rich-text>
+                      </view>
+                    </view>
+                    <view class="_div data-v-461b085f analysis answer-answer-block">
+                      <view class="_p data-v-461b085f detail-item__title">解析</view>
+                      <view class="_p data-v-461b085f">
+                        <parser html="{{item.solvingProcess?item.solvingProcess:'暂无解析'}}" wx:if="{{isMath}}" class="_parser data-v-461b085f"></parser>
+                        <rich-text wx:else nodes="{{item.solvingProcess?item.solvingProcess:'暂无解析'}}" class="_view data-v-461b085f parser-text-jiexi"></rich-text>
+                      </view>
+                    </view>
+                    <view class="_div data-v-461b085f knowledge answer-answer-block">
+                      <view class="_p data-v-461b085f detail-item__title">知识点</view>
+                      <view class="_p data-v-461b085f knowledge-text parser-text-jiexi">{{item.category[0].name?item.category[0].name:'暂无知识点'}}</view>
+                    </view>
+                  </view>
+                  <view wx:elif="{{item.answerMode === 'Composite'}}" class="_div data-v-461b085f child-swiper">
+                    <swiper duration="{{200}}" style="height: 100%" class="_swiper data-v-461b085f">
+                      <swiper-item wx:key="fillIndex" key="fillIndex" wx:for="{{item.subqustionList}}" wx:for-index="fillIndex" wx:for-item="fillItem" class="_swiper-item data-v-461b085f">
+                        <scroll-view scroll-y="{{isScroll}}" class="_scroll-view data-v-461b085f" style=" {{('height:' + (titleScollViewHeight + 'px') + ';')}}">
+                          <view class="_div data-v-461b085f question-title-box bgc-transparent">
+                            <view class="_div data-v-461b085f drag-content" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" data-eventid="{{'0-'+packIndex+'-'+index+'-'+fillIndex}}" data-comkey="{{$k}}">
+                              <view class="_div data-v-461b085f drag-ele"></view>
+                            </view>
+                            <view class="_div data-v-461b085f question-title-content ">
+                              <view class="_div data-v-461b085f question-header">
+                                <view class="_p data-v-461b085f question-length"><label class="_span data-v-461b085f question-index">{{fillIndex+1}}</label> <label class="_span data-v-461b085f question-count">/{{item.subqustionList.length}}</label></view>
+                              </view>
+                              <view class="_div data-v-461b085f"><choiceSingle
+                                    wx:if="{{fillItem.answerMode !== 'EssayQuestion'}}"
+                                    title="{{fillItem.stem}}"
+                                    options="{{fillItem.answerArea.optionList}}"
+                                    read-only="true"
+                                    is-math="{{isMath}}"
+                                  ></choiceSingle>
+                                <view wx:else style="padding: 0 50rpx;" class="_div data-v-461b085f">
+                                  <parser html="{{fillItem.stem}}" wx:if="{{isMath}}" class="_parser data-v-461b085f"></parser>
+                                  <rich-text wx:else nodes="{{fillItem.stem}}" class="_div data-v-461b085f parser-text"></rich-text>
+                                </view>
+                              </view>
+                            </view>
+                            <view class="_div data-v-461b085f">
+                              <view class="_div data-v-461b085f answer-box analysis-composite">
+                                <view class="_div data-v-461b085f">
+                                  <view class="_p data-v-461b085f detail-item__title">答案</view> <label class="_span data-v-461b085f answer-text">正确答案</label> <label class="_span data-v-461b085f yes-text">{{alphabet[fillItem.answer.id]}}</label>
+                                  <block><label class="_span data-v-461b085f not-answer">未作答</label></block>
+                                </view>
+                                <view class="_div data-v-461b085f analysis">
+                                  <view class="_p data-v-461b085f detail-item__title">解析</view>
+                                  <view class="_p data-v-461b085f">
+                                    <parser html="{{fillItem.solvingProcess?fillItem.solvingProcess:'暂无解析'}}" wx:if="{{isMath}}" class="_parser data-v-461b085f"></parser>
+                                    <rich-text wx:else nodes="{{fillItem.solvingProcess?fillItem.solvingProcess:'暂无解析'}}" class="_view data-v-461b085f parser-text-jiexi"></rich-text>
+                                  </view>
+                                </view>
+                                <view class="_div data-v-461b085f knowledge" style="padding-bottom: 50px">
+                                  <view class="_p data-v-461b085f detail-item__title">知识点</view>
+                                  <view class="_p data-v-461b085f knowledge-text parser-text-jiexi">{{fillItem.category?fillItem.category[0].name:'暂无知识点'}}</view>
+                                </view>
+                              </view>
+                            </view>
+                          </view>
+                        </scroll-view>
+                      </swiper-item>
+                    </swiper>
+                  </view>
+                </view>
+              </view>
+            </scroll-view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="_div data-v-461b085f question-dock">
+      <view class="_div data-v-461b085f dock-item">
+        <view class="_div data-v-461b085f index-card" bindtap="handleCard" data-comkey="{{$k}}"></view>
+      </view>
+    </view>
+    <view class="_div data-v-461b085f answer-sheet {{[isCardShow ? '' : 'answer-sheet_show']}}">
+      <view class="_div data-v-461b085f answer-sheet-view">
+        <scroll-view scroll-y="true" style="height: 100%" class="_scroll-view data-v-461b085f">
+          <view class="_div data-v-461b085f section" wx:key="index" key="index" wx:if="{{options.type === 'all'}}" wx:for="{{questionList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-461b085f question-name">{{item.name}}</view>
+            <view class="_div data-v-461b085f rows">
+              <view class="_div data-v-461b085f row-wrap" wx:key="index" key="index" wx:for="{{item.paperQuestionList}}" wx:for-index="questionIndex" wx:for-item="questionItem" >
+                <view class="_div data-v-461b085f row  {{[  [    questionItem.appraisal === 'correct' ? 'selected' : '',    questionItem.appraisal === 'incorrect' ? 'error' : '',    !questionItem.appraisal ? 'default' : ''  ]]}}" bindtap="handleCheck" data-swiperId="{{questionItem.swiperId}}" data-comkey="{{$k}}">{{questionIndex+1}}</view>
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-461b085f section" wx:key="index" key="index" wx:if="{{options.type==='error' && item.name=='单选题'}}" wx:for="{{questionList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-461b085f question-name">{{item.name}}</view>
+            <view class="_div data-v-461b085f rows">
+              <block wx:key="questionIndex" key="questionIndex" wx:for="{{item.list}}" wx:for-index="questionIndex" wx:for-item="questionItem" >
+                <view class="_div data-v-461b085f row-wrap" wx:if="{{questionItem.appraisal !== 'correct'}}">
+                  <view class="_div data-v-461b085f row  {{[  [    questionItem.appraisal === 'correct' ? 'selected' : '',    questionItem.appraisal === 'incorrect' ? 'error' : '',    !questionItem.appraisal ? 'default' : ''  ]]}}" bindtap="handleCheck" data-swiperId="{{questionItem.swiperId}}" data-swiperItemId="{{questionItem.swiperItemId}}"  data-comkey="{{$k}}">{{questionIndex+1}}</view>
+                </view>
+              </block>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="_div data-v-461b085f answer-sheet-actions">
+        <view class="_div data-v-461b085f back" bindtap="handleBack" data-eventid="{{'5'}}" data-comkey="{{$k}}">返回</view>
+      </view>
+    </view>
+  </view>

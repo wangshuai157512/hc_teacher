@@ -1,0 +1,33 @@
+<view class="coupon">
+    <view>
+        <image src="{{cup}}"></image>
+    </view>
+    <view class='body'>
+        <view wx:if="{{type==0}}">
+           <view class="body_cup" >
+           恭喜获得优惠券
+            </view>
+            <view class='body_hour'>
+                新人专享，有效期7天
+            </view>
+        </view>
+
+        <view class="body_reply" wx:if="{{type==1}}">
+           <view>
+               回复“公开课”
+           </view>
+           <view>
+               获取最新报考指导，还可加入备考群
+           </view>
+        </view>
+    </view>
+    <view class="foot">
+        <view class="btn" bindtap="goCourse" wx:if="{{user}}">
+            收下
+        </view>
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if="{{type==0 && !user}}" class="btn">收下</button>
+        <button class="btn" open-type="contact" bindtap="goReply" wx:if="{{type==1}}" >
+            去回复
+        </button>
+    </view>
+</view>

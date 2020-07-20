@@ -1,0 +1,189 @@
+.occupied {
+  width:100%;
+height:100%;
+background-color: #EDF0F2;
+}
+.title_img {
+  width: 750rpx;
+  height: 420rpx;
+}
+/* .title_img .banImg {
+  height: 120rpx;
+} */
+.details_img {
+  width:100%;
+  height:100%;
+  display: block !important;
+}
+.title_t {
+  padding: 35rpx 30rpx;
+  box-sizing: border-box;
+}
+.title_teacher {
+    /* text-align: center; */
+    font-size: 38rpx;
+    font-weight:bold;
+}
+.head_price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  margin-top: 10rpx;
+}
+.old_price {
+  font-size: 28rpx;
+  color: #919399;
+  text-decoration: line-through;
+  /* line-height: 26px; */
+  margin-left: 10rpx;
+}
+.title_money {
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:rgba(255,83,25,1);
+}
+.money_history {
+  font-size:58rpx;
+  font-family:PingFang-SC-Bold,PingFang-SC;
+  font-weight:bold;
+}
+.money_history_pay {
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:rgba(149,156,166,1);
+}
+.bg {
+  width: 100%;
+  height: 16rpx;
+  background: #F2F5F4;
+}
+.InformationOn {
+  width: 750rpx;
+  height: auto;
+}
+.InformationOn image {
+  width: 100%;
+  margin-top: -1px;
+}
+.list_foot {
+  background:rgba(255,255,255,1);
+  height: 100rpx;
+}
+.ios-btn{
+  border-top: 1px solid #EDEFF2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 14px;
+  color: #667891;
+  box-shadow: 0 0 4px rgba(0,0,0,.2);
+}
+/* 底部样式 */
+.foot {
+    width: 100%;
+    height: 100rpx;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    /* box-shadow:0px -3px 5px rgba(195,230,230,0.32); */
+  }
+  .foot_l {
+    width: 375rpx;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foot_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 375rpx;
+    height: 100rpx;
+    position: relative;
+  }
+  .foot_r {
+    width: 375rpx;
+    height: 100rpx;
+    position: relative;
+  }
+  .foot_r view {
+    width: 100%;
+    height: 100rpx;
+    border-radius: 0;
+    background: linear-gradient(to right, #FFBB33 , #FF8800);
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+  }
+  .foot_box image {
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 8rpx;
+  }
+  .foot_box text {
+    font-size: 13px;
+    color: #60656C;
+  }
+  .custom {
+    position: absolute;
+    width: 375rpx;
+    height: 100rpx;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  .login_right {
+    background:red;
+    width: 375rpx;
+    height: 100rpx;
+    position:absolute;
+    z-index:30;
+    bottom:0;
+    opacity: 0;
+  }
+  .consult {
+    width:100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  /* box-shadow:0px 8px 16px 0px rgba(0,179,90,0.2); */
+  /* background:rgba(237,239,242,1); */
+  background: transparent;
+  position: fixed;
+    right: 20rpx;
+    bottom:150rpx
+  }
+  .consult_btn {
+    width:100%;
+    height:100rpx;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+  }
+  .consult image {
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+  }

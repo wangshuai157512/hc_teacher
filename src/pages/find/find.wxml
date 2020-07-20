@@ -1,0 +1,37 @@
+<!--find.wxml-->
+<view class="find">
+  <view class="title_f" style="white-space: nowrap;">
+    <view class="title" style="white-space: nowrap;">
+        <scroll-view scroll-x='true' style="white-space: nowrap;">
+          <view class='title_list'>
+            <view class="title_list_ever {{activeIndex==index? 'titleActvs': ''}}"wx:for="{{all}}" wx:key='index' bindtap="tapever" data-index="{{index}}">{{item}}</view>
+          </view>
+        </scroll-view>
+    </view>
+  </view>
+  <view class="title_t">
+    
+  </view>
+  <view class="{{quesDetal!=index? 'bodyAct':'body'}}" wx:for="{{list2[activeIndex].content}}" wx:key='index'  bindtap="tapname"  data-index="{{index}}">
+    <view class='ask'>
+        <image class="ask_first" src="../../public/images/ask.png"></image>
+        <text>{{item.title}}</text>
+        <image wx:if="{{quesDetal==index}}" class="ask_icon" src="../../public/images/up.png" ></image>
+        <image wx:else class="ask_icon" src="../../public/images/down.png" ></image>
+    </view>
+    <view class="{{a? 'act': 'act'}}" wx:if="{{quesDetal==index}}">
+       <view class="answer">
+        <view class="answer-text">
+            <image class="ask_first" src="../../public/images/answer.png"></image>
+        </view>
+        <!--<text>成绩查询网址：http://ntce.neea.edu.cn (中国教育考试网)成绩公布时间一般在考试结束后1个月左右，具体可以关注官网或加老师微信 (微信号zhiye02)</text>-->
+        <view class='answer_time'>
+          <view class="question_a" style="margin-bottom: 10rpx" wx:for="{{item.contentText}}" wx:key="itemIndex" >
+            <rich-text nodes="{{item.text}}" wx:if="{{item.text}}" style="letter-spacing: 2px"></rich-text>
+            <image src="{{item.img}}" wx:if="{{item.img}}"></image>
+          </view>
+        </view>
+    </view>
+    </view>
+  </view>
+</view>

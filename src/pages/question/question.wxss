@@ -1,0 +1,48 @@
+@import "../common/vendor.wxss";
+@import "../common/common.wxss";
+
+Page {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f5f9;
+}
+.not-course {
+  text-align: center;
+  color: #666;
+  padding-top: 40rpx;
+}
+.topicList {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx 24rpx;
+}
+.topicList > .topicItem {
+  position: relative;
+  height: 218rpx;
+  background-color: #fff;
+  margin-bottom: 24rpx;
+  border-radius: 12rpx;
+  padding-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.topicList > .topicItem .topic-title {
+  padding: 40rpx 32rpx 34rpx 32rpx;
+}
+.topicList > .topicItem .topic-introduction {
+  padding-left: 32rpx;
+  padding-right: 37rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.topicList > .topicItem .topic-introduction .difficulty-text {
+  color: #000;
+}
+.topicList > .topicItem .start-text {
+  position: absolute;
+  right: 37rpx;
+  bottom: 40rpx;
+  padding: 14rpx 37rpx;
+  border-radius: 200rpx;
+}

@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+}
+.items {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid #FF9900;
+}
+image{
+  margin-left: 50rpx;
+  width: 650rpx;
+  height: 500rpx;
+  background-color: lavender;
+}

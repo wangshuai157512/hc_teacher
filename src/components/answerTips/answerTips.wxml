@@ -1,0 +1,10 @@
+<view class="_div data-v-252a6ffa wrap">
+    <view class="_div data-v-252a6ffa">
+      <image class="_img data-v-252a6ffa icon" src="https://app.51xcjyw.com/apicenter/guola-images/guola-images/icon-answer-tips.png"></image>
+      <view class="_div data-v-252a6ffa content">共{{totalNum}}道题，还有{{unfinishedNum}}道未作答</view>
+    </view>
+    <view class="_div data-v-252a6ffa function">
+      <view class="_div data-v-252a6ffa button check" bindtap="onCard" data-eventid="{{'0'}}" data-comkey="{{$k}}">查看答题卡</view>
+      <view class="_div data-v-252a6ffa button submit" bindtap="onSubmitCard" data-eventid="{{'1'}}" data-comkey="{{$k}}">交卷</view>
+    </view>
+  </view>

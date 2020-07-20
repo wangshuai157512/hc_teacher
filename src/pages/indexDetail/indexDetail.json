@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "教师资格精品课",
+  "onReachBottom" : true,
+  "usingComponents": {
+    "image-loader": "../../components/imgLoader/imgLoader"
+  }
+  
+}

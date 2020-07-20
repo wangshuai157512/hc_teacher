@@ -1,0 +1,19 @@
+<!--遮罩层-->
+<view class="progress" wx:if="{{isOpenDialog}}">
+  <view class="dialog_my">
+    <image src="../../public/images/dialog.png" mode="widthFix" class="dialog_png"></image>
+    <view class="dialog_cont">
+      <text class="cont_get">领取凭证码</text>
+      <text class="cont_code">{{code}}</text>
+      <text class="cont_post">将此凭证码截图发客服领红包</text>
+      <view class="new_dialog_link">
+        <text>联系客服</text>
+        <button open-type="contact" class="dialog_link" bindcontact="handleContact">联系客服</button>
+      </view>
+    </view>
+    <image src="../../public/images/close_img_small.png" class="close_img_small" bindtap="closeDialog"></image>
+  </view>
+  <view class="shadow">
+
+  </view>
+</view>

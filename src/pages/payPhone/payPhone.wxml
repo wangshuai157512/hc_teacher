@@ -1,0 +1,58 @@
+
+<view class="pay">
+  <view class="order-detail">
+    <view class="order-content-box bgc-fff mtb8">
+      <view class="order-content">
+        <view class="order-title-box color-180 f-16">订单名称</view>
+        <view class="order-content-text f-16">
+          {{title}}
+        </view>
+      </view>
+    </view>
+    <view class="order-content-box bgc-fff">
+      <view class="order-content">
+        <view class="order-title-box color-180 f-16">收件人</view>
+        <view class="order-content-text f-16">{{userInfo.user}}</view>
+      </view>
+    </view>
+    <view class="order-content-box bgc-fff">
+      <view class="order-content">
+        <view class="order-title-box color-180 f-16">联系电话</view>
+        <view class="order-content-text f-16 f-a">{{userInfo.phone}}</view>
+      </view>
+    </view>
+    <view class="order-content-box bgc-fff mtb8">
+      <view class="order-content">
+        <view class="order-title-box color-180 f-16">优惠券</view>
+        <view class="order-content-text f-16">
+          <text wx:if="{{hasCoupon}}">有一张可用有优惠券</text>
+          <text wx:else>暂无优惠券</text>
+          <!--<img src="../../../static/img/arrow-r.png" class="arrow">-->
+        </view>
+      </view>
+    </view>
+    <view class="order-content-box bgc-fff">
+      <view class="order-content">
+        <view class="order-title-box color-180 f-16" >订单原价</view>
+        <view class="order-content-text2">
+          <view wx:if="{{system !='ios'}}">
+            <text class="color-FF8 f-16 f-a">￥{{coupon.course_price}}</text>
+          </view>
+          <view wx:if="{{hasCoupon && system !='ios' && course_price !==1 }}"><text class="f-16 color-FF8 f-a">优惠券减￥{{coupon.coupon_price}}</text></view>
+          <view wx:if="{{coupon.course_price ===1 }}"><text class="f-16 color-FF8 f-a">该课程不可使用优惠券</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="order-content-box bgc-fff">
+      <view class="order-content">
+        <view class="order-title-box color-180 f-16">合计</view>
+        <view class="order-content-text f-15 color-FF8 f-a" wx:if="{{system !='ios' && coupon.course_price !==1 }}">￥{{coupon.payment_price}}</view>
+        <view class="order-content-text f-15 color-FF8 f-a" wx:if="{{system !='ios' && coupon.course_price ===1 }}">￥{{coupon.course_price}}</view>
+      </view>
+    </view>
+    <view class="tip-box plr15 ptb5 f-12 color-959">
+      温馨提示：此为线上课程，一经出售不支持退款，若您购买课程，视为认同此项条款。
+    </view>
+    <view class="submit-order color-fff f-16" bindtap="startPay" disabled="true">提交订单</view>
+  </view>
+</view>

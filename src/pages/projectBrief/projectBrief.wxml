@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <!--http://pc-shop.xiaoe-tech.com-->
+  <web-view src="https://fe.winwinbj.com/m1106/index-weixin.html"></web-view>
+  <!-- <web-view src="https://m.baidu.com"></web-view> -->
+</view>

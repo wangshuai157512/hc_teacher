@@ -1,0 +1,34 @@
+<view class="_div data-v-409837b2 answer__analysis">
+  <view class="_div data-v-409837b2 lookanswer">
+      <view class="_div data-v-409837b2 look" bindtap="handleProxy" wx:if="{{!isLook}}" data-eventid="{{'1'}}" data-comkey="{{$k}}"><label class="_span data-v-409837b2 color-308">查看答案和解析</label>
+        <image src="../../public/images/arrow.png" class="_img data-v-409837b2"></image>
+      </view>
+      <view wx:else class="_div data-v-409837b2 close" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"><label class="_span data-v-409837b2 color-308">关闭答案和解析</label>
+        <image src="../../public/images/arrow.png" class="_img data-v-409837b2"></image>
+      </view>
+  </view>
+      <view wx:if="{{isLook}}" class="_div data-v-409837b2">
+      <view class="_div data-v-409837b2 level-ele"></view>
+      <view class="_div data-v-409837b2 answer-box">
+        <view class="_div data-v-409837b2 answer-box-content">
+          <view class="_p data-v-409837b2 detail-item__title color-2e3 f-b">答案</view>
+          <!--<parser html="{{answer?answer:'暂无答案'}}" class="_parser data-v-409837b2 parser"></parser>-->
+          <wxparser rich-text="{{answer?answer:'暂无答案'}}" class="_parser data-v-409837b2 parser"></wxparser>
+        </view>
+      </view>
+      <view class="_div data-v-409837b2 answer-box">
+        <view class="_div data-v-409837b2 answer-box-content">
+          <view class="_p data-v-409837b2 detail-item__title color-2e3 f-b">解析</view>
+          <!--<parser html="{{analysis?analysis:'暂无解析'}}" class="_parser data-v-409837b2 parser"></parser>-->
+          <wxparser rich-text="{{analysis?analysis:'暂无解析'}}" class="_parser data-v-409837b2 parser"></wxparser>
+        </view>
+      </view>
+      <view class="_div data-v-409837b2 answer-box">
+        <view class="_div data-v-409837b2 answer-box-content">
+          <view class="_p data-v-409837b2 detail-item__title color-2e3 f-b">知识点</view>
+          <view class="_p data-v-409837b2 question-answer-text parser">{{knowledge?knowledge:'暂无知识点'}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+   

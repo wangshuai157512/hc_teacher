@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <!--http://pc-shop.xiaoe-tech.com-->
+  <web-view src="https://www.pmhuai.top/shop/app6IAa1Hwo9471"></web-view>
+</view>

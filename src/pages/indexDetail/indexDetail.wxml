@@ -1,0 +1,166 @@
+<view class="indexDetail">
+  <view class="head">
+    <view wx:if="{{type!==0}}">
+      <view class="head_image" wx:if="{{isShowContent}}">
+        <image class="head_img {{finishLoadFlag? 'occupied':''}}" bindload='finishLoad' src="../../public/images/banner002.jpg" />
+      </view>
+      <video wx:else
+            src="{{videorc}}"
+            object-fit="cover"
+            id="myVideo"
+            bindplay="bindPlay"
+            show-center-play-btn="false"
+            class="my_video head_image">
+      </video>
+    </view>
+    <view class="head_image" wx:if="{{type===0}}">
+      <image class="head_img {{finishLoadFlag? 'occupied':''}}" bindload='finishLoad' src="{{normalUrl}}{{courseInfo.bannerUrl}}" />
+    </view>
+    <view class="head_bgc">
+        <view class="head_msg">
+          <view class="msg_box">
+            <text wx:if="{{courseInfo.type === 1}}">面试课</text>
+            <text wx:if="{{courseInfo.type === 2}}">笔试课</text>
+            <text wx:if="{{courseInfo.type === 3}}">面试+笔试</text>
+          </view>
+          <text class='head_excellent' wx:if="{{disCount==1}}">限时特惠</text>
+          <text class="title">{{courseInfo.title}}-</text>
+          <text wx:if="{{courseInfo.suitablePerson === 0}}" class="title">幼儿阶段</text>
+          <text wx:elif="{{courseInfo.suitablePerson === 1}}" class="title">小学阶段</text>
+          <text wx:elif="{{courseInfo.suitablePerson === 2}}" class="title">中学阶段</text>
+          <text wx:elif="{{courseInfo.suitablePerson === 3}}" class="title">中小学阶段</text>
+      </view>
+      <view class="head_price">
+        <view class="price_t" wx:if="{{system !='ios'}}">
+          <text class="order">￥</text>
+          <text class="now_price">{{courseInfo.price}}</text>
+          <text class="old_price">￥{{courseInfo.oldPrice}}</text>
+        </view>
+        <text class="price_s" wx:if="{{system !='ios'}}">{{courseInfo.PayNum}}人已购买</text>
+      </view>
+    </view>
+    
+  </view>
+
+  <view class="body">
+    <view class="body_nav" style="{{navStyle}}">
+      <view class="nav_item act"
+            wx:for="{{rightNav}}"
+            wx:key="index"
+            data-index="{{index}}"
+            bindtap="setScrollTop">
+         <view class="{{navPoint == index ? 'active' : ''}}">
+           {{item.name}}
+           <view class="{{navPoint == index ? 'actives' : ''}}">
+          </view>
+         </view>
+      </view>
+      <view class="body_nav_img">
+        <image src="../../public/images/hot.png"></image>
+      </view>
+    </view>
+    <view class="wire">       
+    </view>
+    <view class='body_content'>
+      <view wx:if="{{navPoint == 0}}">
+      <view wx:if="{{type==0}}" class="body_content_b">
+         <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{courseInfo.tem1}}" width="100%" height="100%" />
+         <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{courseInfo.tem2}}" width="100%" height="100%" />
+         <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{courseInfo.tem3}}" width="100%" height="100%" />
+      </view>
+      <view wx:if="{{type!=0}}">
+        <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{courseInfo.tem1}}" width="100%" height="100%" />
+         <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{courseInfo.tem2}}" width="100%" height="100%" />
+         <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{courseInfo.tem3}}" width="100%" height="100%" />
+      </view>
+        
+      </view>
+      <view wx:elif="{{navPoint == 1}}">
+        <view class="video_body" wx:if="{{type==0}}">
+          <view class="video_list" wx:for="{{videoList}}" wx:key="index" data-index="{{index}}" data-url="{{item.videoUrl}}" data-num="{{item.no}}" data-time="{{item.type}}" data-index="{{index}}" bindtap="handUrl">
+            <view class="video_content {{index == videoList.length-1? 'video_content_none':''}}">
+              <view class='num'>{{index+1 < 10?'0'+(index+1):index+1}}</view>
+              <view>{{item.title}}</view>
+              <view class="icon" wx:if="{{!isShowContent}}">{{item.time}}分钟</view>
+            </view>
+          </view>
+        </view>
+        <view wx:if="{{type!=0}}">
+          <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{courseInfo.tem3}}" width="100%" height="100%" />
+        </view>
+      </view>
+      <view wx:else >
+        <view wx:for="{{courseInfo.recommendList}}" wx:key="index" class="school" bindtap="change_data" data-id="{{item.id}}" data-type="{{item.isPositivePrice}}">
+          <view class="coures_l school_list">
+            <image-loader  default-image='../../public/images/occupied.png' mode='widthFix' original-image="{{normalUrl}}{{item.imgUrl}}" width="100%" height="100%" />
+          </view>
+          <view class="coures_r">
+            <view wx:if="{{courseInfo.suitablePerson === 3}}"> 
+              <text class="title">{{item.title}}-</text>
+              <text wx:if="{{item.suitablePerson === 0}}" class="title">幼儿阶段</text>
+              <text wx:elif="{{item.suitablePerson === 1}}" class="title">小学阶段</text>
+              <text wx:elif="{{item.suitablePerson === 2}}" class="title">中学阶段</text>
+            </view>
+            <view wx:else class="coures_title">
+              {{item.title}}
+            </view>
+            <view class="coures_hour">
+              {{item.introduce}}
+            </view>
+            <view class="coures_study" >
+              <text wx:for="{{item.tag}}" wx:key='index'>{{item}}</text>
+            </view>
+          </view>
+          <view class="coures_price" wx:if="{{system !='ios'}}">
+              ￥{{item.price}}
+          </view>
+          <view class="{{index == courseInfo.recommendList.length-1? '' : 'school_wire'}}">
+            
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='list_foot'>
+
+  </view>
+  <view class="foot" wx:if="{{system != 'ios'}}">
+    <view class="foot_l">
+      <view class="foot_box">
+        <image src="../../public/images/customer.png"></image>
+        <text>客服</text>
+      </view>
+      <button open-type="contact"
+              bindcontact="handleContact"
+              class="custom">客服</button>
+    </view>
+   <view wx:if="{{!userInfo.user}}" class="foot_r">
+      <view>立即购买</view>
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="login_right">授权</button>
+    </view>
+    <view wx:elif="{{!userInfo.phone}}" class="foot_r">
+      <view>立即购买</view>
+      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="login_right">手机号</button>
+    </view>
+    <view class="foot_r" wx:elif="{{isPay && type==0}}">
+      <view wx:if="{{isShowContent}}">暂无视频</view>
+      <view bindtap="see" wx:else>观看视频</view>
+    </view>
+    <view class="foot_r" wx:elif="{{isPay && type!=0}}">
+      <button class="btnt" open-type="contact"
+              bindcontact="handleContact"
+              >联系客服</button>
+    </view>
+    <view class="foot_r" wx:else>
+      <view bindtap="linkTo" data-id='{{courseId}}' data-type='{{courseType}}' wx:if="{{system !='ios'}}">立即购买</view>
+    </view>
+  </view>
+  <view class="ios-btn" wx:if="{{system == 'ios'}}">
+    由于相关规范，ios功能暂不可用
+  </view>
+  <view class="consult" wx:if="{{system == 'ios'}}">
+    <button class="consult_btn" open-type="contact">
+      <image src="../../public/images/consult.png" />
+    </button>
+  </view>
+</view>

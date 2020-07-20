@@ -1,0 +1,99 @@
+Page {
+    /* background-color: #ccc; */
+    height: 100%;
+}
+.swiper-box {
+    height: calc(100% - 106rpx);
+}
+#swiper-content {
+    height: 100%;
+}
+.coupon-component {
+    padding: 0 30rpx;
+}
+.scroll-box{
+    height: 100%;
+}
+.title {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+.tips{
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    padding-top: 30px;
+}
+.graph {
+    /* position: absolute; */
+    height: 2px;
+    width: 35px;
+    /* margin: 5px outo; */
+    margin: 5px 0 0 12px;
+    background: rgb(153, 224, 112);
+}
+.title-tab-text{
+    font-size: 30rpx;
+    color: #959CA6;
+}
+.courses {
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(61, 43, 226)
+}
+.change {
+    background: #ccc !important;
+
+}
+.title_change {
+    font-weight: 700;
+    font-size: 32rpx;
+    color: #2E3033;
+}
+.courses_phone {
+    font-size: 40rpx;
+    padding: 40rpx;
+    /* text-align: right    */
+}
+.courses_refill {
+    font-size: 36px;
+}
+.courses_self {
+    font-size: 40rpx;
+    padding-top: 40rpx;
+}
+.courses_explain {
+    padding-top: 40px;
+    font-size: 14px;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+}
+.courses_period {
+    margin-left: 20px
+}
+.courses_message {
+    position: absolute;
+    right: 30px;
+}
+.img {
+   width: 15px;
+   position: absolute;
+   right: 12px;
+   bottom: 2px;
+}
+.information {
+    background-color: red;
+    color: aliceblue;
+    text-align: center;
+
+}
+.information_surprised {
+    padding: 20px;
+    font-size: 30px
+}

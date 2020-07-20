@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "资料详情",
+  "onReachBottom" : true,
+  "usingComponents": {
+    "image-loader": "../../components/imgLoader/imgLoader"
+  }
+}

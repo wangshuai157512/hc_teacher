@@ -1,0 +1,100 @@
+<view>
+  <!--弹出信息-->
+    <alertView
+      difficultyDegree="{{courseInfo.difficultyDegreeName}}"
+      coursetype="{{courseInfo.fullName}}"
+      score="{{courseInfo.score}}"
+      adoptscore="{{courseInfo.passedCond}}"
+      title="{{courseInfo.testName}}"
+      time="{{courseInfo.paperTime}}"
+      bind:onStart="start"
+      is-visible="{{isVisible}}"
+    ></alertView>
+
+    <view class="_div data-v-68b4b598 answerContainer">
+    <view class="_div data-v-68b4b598 question-view">
+      <swiper duration="200" style="height: 100%" current="{{currentTab}}" bindchange="handleChange">
+        <block wx:if="{{item.paperQuestionList}}" wx:for="{{questionList}}" wx:key="index">
+          <swiper-item data-id="{{item.swiperItemId}}" class="_swiper-item data-v-68b4b598 swiper-item-style">
+            <view class="_div data-v-68b4b598 itemContent plr10">
+              <view class="_div data-v-68b4b598 topic-type-text">
+                <view class="_p data-v-68b4b598 tpic-type-text f-20 f-b ">{{item.name}}</view>
+              </view>
+              <view class="_div data-v-68b4b598 question-summary"> 本小题共{{item.totalquestion}}小题，每小题{{item.realEachScore}}分，共{{item.totalscore}}分。 </view>
+            </view>
+            <view animation="{{animationData}}" class="_div tran data-v-68b4b598 question-summary__gesture {{[[isRotate ? 'is-rotate' : '']]}}">
+              <image src="../../public/images/shoushi.png" class="_img data-v-68b4b598"></image>
+            </view>
+            <view class="_div data-v-68b4b598 question-summary__text">向左滑动，开始答题</view>
+          </swiper-item>
+          <swiper-item class="_swiper-item data-v-68b4b598 question-item" item-id="{{item.swiperItemId}}" wx:for="{{item.paperQuestionList}}" wx:key="questionIndex" wx:for-index="questionIndex" wx:for-item="questionItem">
+            <scroll-view scroll-y="true" style="height: 100%" class="_scroll-view data-v-68b4b598 {{[item.answerMiode === 'SingleSelection' ? 'bgc-fff' : '']}}">
+              <view class="_div data-v-68b4b598 question-title-box {{[item.answerMode === 'SingleSelection' ? 'bgc-fff' : '']}}" wx:if="true">
+                <view class="_div data-v-68b4b598 question-header-box">
+                  <view class="_div data-v-68b4b598 question-header">
+                    <view class="_div data-v-68b4b598 question-title">{{questionItem.questiontypename}}</view>
+                    <view class="_p data-v-68b4b598 question-length"><label class="_span data-v-68b4b598 question-index">{{questionIndex+1}}</label> <label class="_span data-v-68b4b598 question-count">/{{item.paperQuestionList.length}}</label></view>
+                  </view>
+                </view>
+                 <block wx:if="{{questionItem.answerMode==='SingleSelection'}}"><choiceSingle
+                   bind:changeCurrentTab="onchangeCurrentTab"
+                    title="{{questionItem.stem}}"
+                    options="{{questionItem.answerArea.optionList}}"
+                    topicListIndex="{{index}}"
+                    questionIndex="{{questionIndex}}"
+                    is-math="{{globalData.isMath}}"
+                  ></choiceSingle></block>
+                <view wx:else class="_div data-v-68b4b598 questionItem-title">
+                  <view class="_div data-v-68b4b598 bgc-fff title-content">
+                    <wxparser rich-text="{{questionItem.stem}}" wx:if="true" class="_parser data-v-68b4b598 title"></wxparser>
+                    <rich-text wx:else nodes="{{questionItem.stem}}" class="_view data-v-68b4b598 title"></rich-text>
+                  </view>
+                  <answerAnalysis
+                    answer="{{questionItem.answer.content}}"
+                    analysis="{{questionItem.solvingProcess}}"
+                    knowledge="{{questionItem.category[0].name}}"
+                    wx:if="{{questionItem.answerMode==='EssayQuestion'}}"
+                  ></answerAnalysis>
+                </view>
+              </view>
+            </scroll-view>
+          </swiper-item>
+        </block>
+        <swiper-item item-id="last" wx:if="{{questionList && questionList.length > 0}}" class="_swiper-item data-v-68b4b598">
+          <answerTips
+              total-num="{{totalNum}}"
+              unfinished-num="{{unfinishedNum}}"
+              bind:onCard="handleCard"
+              bind:onSubmitCard="submitCard"
+            ></answerTips>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!--显示答题时间-->
+    <view class="_div data-v-68b4b598 answer-card-box" wx:if="{{!isVisible}}">
+      <view class="_div data-v-68b4b598 time-box">{{time}}</view>
+      <!--显示答题卡-->
+      <view class="_div data-v-68b4b598 card-img" bindtap="handleCard" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+        <image src="https://app.51xcjyw.com/apicenter/guola-images/guola-images/icon-index-card.png" class="_img data-v-68b4b598"></image>
+      </view>
+    </view>
+    <view class="_div data-v-68b4b598 answer-sheet {{[isCardShow ? '' : 'answer-sheet_show']}}">
+      <view class="_div data-v-68b4b598 answer-sheet-view">
+        <scroll-view scroll-y="true" style="height: 100%" class="_scroll-view data-v-68b4b598">
+          <view class="_div data-v-68b4b598 section" wx:key="index" wx:if="{{item.paperQuestionList}}" wx:for="{{questionList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-68b4b598 question-name">{{item.name}}</view>
+            <view class="_div data-v-68b4b598 rows">
+              <view class="_div data-v-68b4b598 row-wrap" wx:key="questionIndex" wx:for="{{item.paperQuestionList}}" wx:for-index="questionIndex" wx:for-item="questionItem">
+                <view class="_div data-v-68b4b598 row  {{[questionItem.selectState? 'selected' : 'default']}}" bindtap="goChecked" data-index="{{questionIndex}}" data-swiperItem="{{questionItem.swiperItemId}}" data-comkey="{{$k}}">{{questionIndex+1}}</view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="_div data-v-68b4b598 answer-sheet-actions">
+        <view class="_div data-v-68b4b598 answer-sheet-action answer-sheet-action_default" bindtap="handleComeon" data-eventid="{{'5'}}" data-comkey="{{$k}}">继续答题</view>
+        <view class="_div data-v-68b4b598 answer-sheet-jiaojuan" bindtap="submitCard" data-eventid="{{'6'}}" data-comkey="{{$k}}">交卷</view>
+      </view>
+    </view> 
+  </view>
+</view>

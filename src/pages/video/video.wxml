@@ -1,0 +1,59 @@
+<view class='index_video'>
+  <view class="" wx:if="{{isShowContent}}">
+    <image class="head_img"
+        src="../../public/images/banner002.jpg">
+    </image>
+  </view>
+  <view class="" wx:else>
+     <view wx:if="{{isHade}}" class="view_image ">
+      <image class="head_img"
+        src="{{normalUrl}}{{imgUrl}}">
+      </image>
+      <view class="coupon-box">
+        <view class="view_shadow" >
+        <view>
+          <view>
+          当前为4G网络模式
+          </view>
+          <view>
+            <image src="../../public/images/play.png" class="play" bindtap="startPlay"></image>
+          </view>
+        </view>
+      </view>
+      </view>
+    </view>
+    <video wx:else
+      src="{{videoUrl}}"
+      controls
+      autoplay="{{videoUrl}}"
+      bindended='nextVideo'
+      id="myVideo"
+      style="height:{{videoHeight}}px"
+      class="my_video">
+    </video>
+  </view>
+  <view class="video_body">
+    <view class="video_title">
+      <text class="num">{{videoIndex+1<10? '0'
+      +(videoIndex+1):videoIndex+1}}</text>
+      <text>{{videoList[videoIndex].title}}</text>
+    </view>
+    <view class='bot'>
+    
+    </view>
+    <view class="video_list" wx:for="{{videoList}}" wx:key="index" data-url="{{item.videoUrl}}" data-num="{{item.no}}" data-time="{{item.time}}" data-index="{{index}}" bindtap="handUrl">
+      <view wx:if='{{videoIndex==index}}' class="video_content video_list_active">
+        <view class='numActive'>
+          {{index+1 < 10?'0'+(index+1):index+1}}
+        </view>
+        <view>{{item.title}}</view>
+        <view class="iconActive">正在播放</view>
+      </view>
+      <view wx:else class="video_content">
+        <view class='num'>{{index+1 < 10?'0'+(index+1):index+1}}</view>
+        <view>{{item.title}}</view>
+        <view class="icon">{{item.time}}分钟</view>
+      </view>
+    </view>
+  </view>
+</view>

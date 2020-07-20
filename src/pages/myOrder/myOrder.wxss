@@ -1,0 +1,168 @@
+Page {
+  width:100%;
+  height: 100%;
+  background-color: #fff;
+}
+.wire_box {
+  width: 100%;
+  height: 20rpx;
+  background-color: #F2F5F4;
+}
+.swiper{
+  height: calc(100% - 88rpx);
+}
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #fff;
+}
+.swiper-tab-item{
+  display: inline-block;
+  width: 33.33%;
+  color: #787787;
+  font-size: 16px;
+}
+.active{
+  color:#00A61C;
+  border-bottom: 4rpx solid #00A61C;
+}
+
+.list {
+  width: 100%;
+  /* margin-top: 10px; */
+  background: #fff;
+  /* padding-bottom: 20rpx; */
+}
+.box_t {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid #f1f1f1;
+  justify-content: space-between;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.box_b {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.box_b_t {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.expiry_data {
+  position: absolute;
+  right: 0;
+  bottom: 28rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.expiry_data text {
+  color: red;
+}
+.box_b_b button {
+  width: 180rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+  line-height: 60rpx;
+
+}
+.box_b_t_text {
+  display: flex;
+  margin-left: 20rpx;
+  flex-direction: column;
+}
+.b_t_title {
+  font-size: 28rpx;
+  color: #4b4b4b;
+}
+.b_t_price {
+  font-size: 13px;
+  color: #c36a70;
+}
+.text_merch {
+  font-size: 14px;
+  color: #adb0b7;
+}
+.text_ispay {
+  color: #00A61C;
+  font-size: 14px;
+}
+.list image {
+  width: 150rpx;
+  height: 150rpx;
+}
+swiper {
+  overflow: hidden;
+}
+.loading {
+  padding-top: 20rpx;
+  color: #666;
+  width: 100%;
+  font-size: 28rpx;
+  position: absolute;
+  text-align: center;
+}
+.loading text {
+  text-align: center;
+}
+.order-time {
+  font-size: 28rpx;
+  color: #adb0b7;
+}
+.order-item{
+  display: flex;
+  justify-content: space-between;
+}
+.order-button-wrap{
+  display: flex;
+}
+.cancel-button{
+  margin-right: 20rpx;
+  color: #666;
+  border: 1px solid #dcdde1;
+  background-color: #fff;
+}
+.pay-button{
+  color: #fff;
+  background-color: #00A61C;
+}
+.box_b_t_text .order-title {
+  font-size: 36rpx;
+  color: #666;
+}
+.box_b_t_text .order-price {
+  font-size: 28rpx;
+  color: #FF6A00;
+}
+.box_b_t_text{
+  padding: 10rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.delete-order{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete-order-button{
+  margin: 0;
+  color: #666;
+}
+.no_pic{
+  width: 500rpx;
+  height: 260rpx;
+  margin-top: 280rpx;
+}
+.order-time-wrap{
+  display: flex;
+  align-items: center;
+}

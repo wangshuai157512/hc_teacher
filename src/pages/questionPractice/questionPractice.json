@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "题库",
+  "usingComponents": {
+    "alertView": "../../components/alertView/alertView",
+    "choiceSingle": "../../components/choiceSingle/choiceSingle",
+    "answerAnalysis": "../../components/answerAnalysis/answerAnalysis",
+    "answerTips": "../../components/answerTips/answerTips",
+    "wxparser": "plugin://wxparserPlugin/wxparser"
+  }
+}
